@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SbStudio.Authoring.Sdk</name>
+    </assembly>
+    <members>
+        <member name="T:SbStudio.Authoring.DevelopmentSnapshot">
+            <summary>A stable set of source inputs shared by compilation and worker isolation.</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.DevelopmentSnapshot.#ctor(System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Byte[]})">
+            <summary>A stable set of source inputs shared by compilation and worker isolation.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.LegacyTemplateFormat">
+            <summary>Read-only compatibility with persisted template data from the original SDK.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.StableRandom">
+            <summary>Version 1: SplitMix64 with an unsigned 32-bit seed and 53-bit double output.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.PackageFiles">
+            <summary>Shared package validation; this never loads or executes assemblies.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.GroupEffects.GroupEffectRules">
+            <summary>The single output contract used by builders, the worker and document adapters.</summary>
+        </member>
+    </members>
+</doc>
