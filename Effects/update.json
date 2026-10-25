@@ -1,0 +1,9 @@
+{
+    "files":  [
+                  {
+                      "path":  "SbStudio.GroupEffects.Shake.dll",
+                      "sha256":  "dd0214399bf73c9ce0b854aa96833c9a1dccf12cdea279a02852e242114e9ce0",
+                      "version":  "2.0.0.0"
+                  }
+              ]
+}

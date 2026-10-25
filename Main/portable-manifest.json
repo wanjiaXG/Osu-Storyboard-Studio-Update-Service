@@ -2,7 +2,7 @@
     "version":  "0.3.0-beta.3",
     "files":  [
                   {
-                      "sha256":  "ed8e98f760105a5baf814679cbd0c6a8ecafafc7cc2a30678ea2bb61bf5a545a",
+                      "sha256":  "a170f21c5c77cb6333180f4487b74f12bc6daed2aa519bb2d742edaba488a8b0",
                       "path":  "authoring/authoring.md"
                   },
                   {
@@ -766,7 +766,7 @@
                       "path":  "authoring/host/SbStudio.Authoring.Host.deps.json"
                   },
                   {
-                      "sha256":  "762979bef0bbd1ffd7f5b19440ffb0cf7f727b99d0e337635896e8e47b6c807e",
+                      "sha256":  "be4a1c04440360b4faa1c271803ab055610dc6e289fb71eb2f63167efb6f7ccb",
                       "path":  "authoring/host/SbStudio.Authoring.Host.dll"
                   },
                   {
@@ -774,7 +774,7 @@
                       "path":  "authoring/host/SbStudio.Authoring.Host.exe"
                   },
                   {
-                      "sha256":  "74d0bdae450084fc2c5080f7a9287d137354fb9b165c2d31fabe322387cd4c8f",
+                      "sha256":  "7192937a4b9e3ea6db1789978d01c6ce7e88b6ec130a11c42f2c3a53bc72370d",
                       "path":  "authoring/host/SbStudio.Authoring.Host.pdb"
                   },
                   {
@@ -782,15 +782,15 @@
                       "path":  "authoring/host/SbStudio.Authoring.Host.runtimeconfig.json"
                   },
                   {
-                      "sha256":  "3647eafa4f484729cc3958c46809aac82acba88a05aef5be07656595c6fa859b",
+                      "sha256":  "b206e38129a662d25b5a53fb516e66b780e4a35b6b4d7f415d95ffaf4775ea42",
                       "path":  "authoring/host/SbStudio.Authoring.Sdk.dll"
                   },
                   {
-                      "sha256":  "8dba1d5868c82779b8e040c0704f83cadd5ba70f87bc22f15fa8cf21810c875d",
+                      "sha256":  "7cb3520ff76d8dad71334495c9e20bff455b3f3db1136491e648fc3ce8393bab",
                       "path":  "authoring/host/SbStudio.Authoring.Sdk.pdb"
                   },
                   {
-                      "sha256":  "8d761f1c468e41cba1a38adfc809abe5aaa2bb9dfceef29b2a2cc8730e611553",
+                      "sha256":  "8b47b297df2b5f06fa892156b0ab96d9ecc18a842625a0f0d8a7e18cc2011fb2",
                       "path":  "authoring/host/SbStudio.Authoring.Sdk.xml"
                   },
                   {
@@ -1606,24 +1606,16 @@
                       "path":  "dotnet/shared/Microsoft.NETCore.App/10.0.13/WindowsBase.dll"
                   },
                   {
+                      "sha256":  "dd0214399bf73c9ce0b854aa96833c9a1dccf12cdea279a02852e242114e9ce0",
+                      "path":  "Effects/SbStudio.GroupEffects.Shake.dll"
+                  },
+                  {
                       "sha256":  "aea8211be0ba9606b3134415326f6d6f3fc6da494a955eceb8aced49a5683b58",
                       "path":  "FFmpeg.AutoGen.dll"
                   },
                   {
                       "sha256":  "a107a8e8378527897d5e99f3a53d01a7289ef5fda564952fbec2769386eccd58",
                       "path":  "glfw3.dll"
-                  },
-                  {
-                      "sha256":  "2513f812039205c0b1897d1f7473c6c0793ba5043426a15cb89a9e4e85f1cbe4",
-                      "path":  "group-effects/builtin/lib/SbStudio.GroupEffects.BuiltIn.dll"
-                  },
-                  {
-                      "sha256":  "0b0765b89809d4109659edb551d0e4868a583e3641d670b61bf1122cf12292bc",
-                      "path":  "group-effects/builtin/module.json"
-                  },
-                  {
-                      "sha256":  "73cf2844573cd72e392b5bb5baeb240f80069781406eac5b7d21da84acfc2892",
-                      "path":  "group-effects/builtin/schema.json"
                   },
                   {
                       "sha256":  "9495bd3de7e105a0cd937ac0b693f3abaaf12d8433a940d1bbae3d58f2460bef",
@@ -1750,7 +1742,7 @@
                       "path":  "OsuStoryboardStudio.deps.json"
                   },
                   {
-                      "sha256":  "968ebab19d96c3af86756c48ea8f478bc79219c0695ff5b828d986caaa62d0eb",
+                      "sha256":  "347c1504e1b6fc7caf278c8fc47ac1ff701c4a9893c8d7e743c4660c98b5d418",
                       "path":  "OsuStoryboardStudio.dll"
                   },
                   {
@@ -1758,7 +1750,7 @@
                       "path":  "OsuStoryboardStudio.exe"
                   },
                   {
-                      "sha256":  "14cc464b913f468fd6b6e6a844c7aff34276f2673951d0d76a52f112a7806b7d",
+                      "sha256":  "a0a266d15385a9b2ea10543a213afd0dae1df3733e34528180f045b2053192b6",
                       "path":  "OsuStoryboardStudio.pdb"
                   },
                   {
@@ -1782,31 +1774,31 @@
                       "path":  "ppy.ManagedBass.Fx.dll"
                   },
                   {
-                      "sha256":  "3647eafa4f484729cc3958c46809aac82acba88a05aef5be07656595c6fa859b",
+                      "sha256":  "b206e38129a662d25b5a53fb516e66b780e4a35b6b4d7f415d95ffaf4775ea42",
                       "path":  "SbStudio.Authoring.Sdk.dll"
                   },
                   {
-                      "sha256":  "8dba1d5868c82779b8e040c0704f83cadd5ba70f87bc22f15fa8cf21810c875d",
+                      "sha256":  "7cb3520ff76d8dad71334495c9e20bff455b3f3db1136491e648fc3ce8393bab",
                       "path":  "SbStudio.Authoring.Sdk.pdb"
                   },
                   {
-                      "sha256":  "8d761f1c468e41cba1a38adfc809abe5aaa2bb9dfceef29b2a2cc8730e611553",
+                      "sha256":  "8b47b297df2b5f06fa892156b0ab96d9ecc18a842625a0f0d8a7e18cc2011fb2",
                       "path":  "SbStudio.Authoring.Sdk.xml"
                   },
                   {
-                      "sha256":  "e0029ed0db752f9ee422cd2b00ce1610e6524de28931010a0864b8a37bf2856b",
+                      "sha256":  "9d6d5f221b514fc796daeae2ef838972e9fef924273ae803dab639500888c4c9",
                       "path":  "SbStudio.Core.dll"
                   },
                   {
-                      "sha256":  "d8c96f8b07e8c9f298c4f697c521df3d1c979b3d61babba575787cbae789b299",
+                      "sha256":  "e38476fa3e0b8e24e2882d62a5ceafaa79423fcf532e8efb5b9eeea9e001bf24",
                       "path":  "SbStudio.Core.pdb"
                   },
                   {
-                      "sha256":  "ddf8f4b40948fea0eb032d7d29a095711283dd6b3c97efd0c20f74f6b6acc909",
+                      "sha256":  "8314f3dff263d58a3575de7afa868c24ab3a3b711a57628dda764a6d578c1712",
                       "path":  "SbStudio.Resources.dll"
                   },
                   {
-                      "sha256":  "6260c3c437ae27f68f602c1a5471fa16e4ca58c3801584f42fc405edd3c8d220",
+                      "sha256":  "c8be667ee40f42556eb872aba8a6dbf6fdadea979de8f2d4df081ebdd36590e3",
                       "path":  "SbStudio.Resources.pdb"
                   },
                   {
@@ -1858,43 +1850,19 @@
                       "path":  "swscale-8.dll"
                   },
                   {
-                      "sha256":  "b758189c7aa4e70e875297b8f799e70c16d85fb3e754de5861a116f3b3c2428a",
-                      "path":  "templates/builtin/assets/background.png"
+                      "sha256":  "0910333a20c1c565128fa3ffc16ed1059411ad34020eeae8d60fd90e24d8d924",
+                      "path":  "Templates/SbStudio.Templates.BackgroundPush.dll"
                   },
                   {
-                      "sha256":  "26821a58d8d952e864ea72a4bbf79ffb09a0351720c68f8ad99806bbb312c6ab",
-                      "path":  "templates/builtin/assets/particle.png"
+                      "sha256":  "e29ef022701a9ef05658b42db19196cf8e9d0882430cd41e1ad851127d77ba89",
+                      "path":  "Templates/SbStudio.Templates.BeatFlash.dll"
                   },
                   {
-                      "sha256":  "7ac2abfce2be8b46dd9826d597d94edeefc1570b4a992622721b90a1850e3ee9",
-                      "path":  "templates/builtin/assets/pixel.png"
+                      "sha256":  "d64d33941a325fa246e03e3322614749262fb05079b1a83b658e8548cfb57c4a",
+                      "path":  "Templates/SbStudio.Templates.Snow.dll"
                   },
                   {
-                      "sha256":  "c4a7b1c504d4b98656432e13e58a304b05d31460306e8e812e7c5fb96d3ff406",
-                      "path":  "templates/builtin/lib/SbStudio.Templates.BuiltIn.dll"
-                  },
-                  {
-                      "sha256":  "6f704d587a42950679d6cc5847d3436683a38d5e5e6fde29df0e32a6ad157e16",
-                      "path":  "templates/builtin/module.json"
-                  },
-                  {
-                      "sha256":  "f45d356d35eb2750d70077a99dfcd38f0a597e69f7de59a73114316461beea0e",
-                      "path":  "templates/builtin/presets/slow-push.sbpreset"
-                  },
-                  {
-                      "sha256":  "201061e9ab6d8297f46965f6ca0bafad3aa0db0353f139390e97b7959ce2b615",
-                      "path":  "templates/builtin/presets/soft-pulse.sbpreset"
-                  },
-                  {
-                      "sha256":  "4f16f87780651f562935144ef2b03f185d02001dadb4ac0ec7f49865b1f26520",
-                      "path":  "templates/builtin/presets/soft-snow.sbpreset"
-                  },
-                  {
-                      "sha256":  "09aa2644deb0dcfa1c051c83d60add9896c07755baf41d7bb24b6ade2e4a3c78",
-                      "path":  "templates/builtin/schema.json"
-                  },
-                  {
-                      "sha256":  "3b85e8dc5e741f44d69de010f742320c4262efb6b315f176e6e96eddc077a79e",
+                      "sha256":  "79716e588b1003754831e7c185f4e0904023b737dc5fa93053d8eef463611528",
                       "path":  "updater/OsuStoryboardStudio.Updater.exe"
                   }
               ]

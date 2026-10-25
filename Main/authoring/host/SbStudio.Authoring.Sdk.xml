@@ -10,8 +10,34 @@
         <member name="M:SbStudio.Authoring.DevelopmentSnapshot.#ctor(System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Byte[]})">
             <summary>A stable set of source inputs shared by compilation and worker isolation.</summary>
         </member>
+        <member name="P:SbStudio.Authoring.PackageManifest.Replaces">
+            <summary>Earlier package ids whose modules this package continues, so their instances can be upgraded to it.
+            Left out of the JSON when absent, which keeps the content hash of packages written before it existed.</summary>
+        </member>
         <member name="T:SbStudio.Authoring.LegacyTemplateFormat">
             <summary>Read-only compatibility with persisted template data from the original SDK.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.ModuleAssembly">
+            <summary>
+            A module shipped as one DLL. Its <c>module.json</c> and everything under <c>assets/</c> and <c>presets/</c> are embedded
+            resources named by their package path. Files may also sit outside the DLL, in a folder named after it next to it
+            (<c>Snow.dll</c> and <c>Snow/assets/...</c>). This only reads the file; it never loads or runs it.
+            </summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ModuleAssembly.IsModule(System.String)">
+            <summary>Whether the file is a .NET assembly that carries an embedded module manifest.</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ModuleAssembly.ReadManifest(System.String)">
+            <summary>The manifest as the DLL declares it, before its package is built.</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ModuleAssembly.SourceHash(System.String)">
+            <summary>Identifies what the DLL expands to: its bytes, the files next to it and the SDK that describes it.</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ModuleAssembly.Expand(System.String,System.String)">
+            <summary>Writes a package source folder (manifest, <c>lib/</c> DLL, assets and presets) that the host can then describe and seal.</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ModuleAssembly.ReadResource(System.String,System.String)">
+            <summary>One embedded file of the DLL, or null when it has none by that path.</summary>
         </member>
         <member name="T:SbStudio.Authoring.StableRandom">
             <summary>Version 1: SplitMix64 with an unsigned 32-bit seed and 53-bit double output.</summary>

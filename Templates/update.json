@@ -1,0 +1,19 @@
+{
+    "files":  [
+                  {
+                      "path":  "SbStudio.Templates.BackgroundPush.dll",
+                      "sha256":  "0910333a20c1c565128fa3ffc16ed1059411ad34020eeae8d60fd90e24d8d924",
+                      "version":  "3.0.0.0"
+                  },
+                  {
+                      "path":  "SbStudio.Templates.BeatFlash.dll",
+                      "sha256":  "e29ef022701a9ef05658b42db19196cf8e9d0882430cd41e1ad851127d77ba89",
+                      "version":  "3.0.0.0"
+                  },
+                  {
+                      "path":  "SbStudio.Templates.Snow.dll",
+                      "sha256":  "d64d33941a325fa246e03e3322614749262fb05079b1a83b658e8548cfb57c4a",
+                      "version":  "3.0.0.0"
+                  }
+              ]
+}
