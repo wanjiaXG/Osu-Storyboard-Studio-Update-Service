@@ -1,0 +1,23 @@
+<Project>
+  <!-- A module ships as one DLL with its resources and author documentation. -->
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assets\**\*" LogicalName="assets/%(RecursiveDir)%(Filename)%(Extension)" />
+    <EmbeddedResource Include="presets\**\*" LogicalName="presets/%(RecursiveDir)%(Filename)%(Extension)" />
+    <EmbeddedResource Include="lang\**\*" LogicalName="lang/%(RecursiveDir)%(Filename)%(Extension)" />
+    <AdditionalFiles Include="lang\*.json" />
+  </ItemGroup>
+  <Target Name="EmbedModuleDocumentation" BeforeTargets="CoreCompile" DependsOnTargets="GenerateModuleDocumentation">
+    <ItemGroup>
+      <_CoreCompileResourceInputs Include="$(IntermediateOutputPath)module.docs.xml" LogicalName="docs.xml" ManifestResourceName="docs.xml" Type="Non-Resx" WithCulture="false" />
+      <FileWrites Include="$(IntermediateOutputPath)module.docs.xml;$(IntermediateOutputPath)module.docs.dll" />
+    </ItemGroup>
+  </Target>
+  <Target Name="GenerateModuleDocumentation" BeforeTargets="EmbedModuleDocumentation">
+    <Csc Sources="@(Compile)" References="@(ReferencePath)" TargetType="Library" OutputAssembly="$(IntermediateOutputPath)module.docs.dll"
+         DocumentationFile="$(IntermediateOutputPath)module.docs.xml" LangVersion="$(LangVersion)" Nullable="$(Nullable)" DisabledWarnings="$(NoWarn)" NoStandardLib="true" DefineConstants="$(DefineConstants)" Analyzers="@(Analyzer)" AdditionalFiles="@(AdditionalFiles)" />
+  </Target>
+</Project>

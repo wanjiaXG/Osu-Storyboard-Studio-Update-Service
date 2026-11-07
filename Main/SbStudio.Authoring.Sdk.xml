@@ -4,49 +4,839 @@
         <name>SbStudio.Authoring.Sdk</name>
     </assembly>
     <members>
-        <member name="T:SbStudio.Authoring.DevelopmentSnapshot">
-            <summary>A stable set of source inputs shared by compilation and worker isolation.</summary>
+        <member name="M:SbStudio.Authoring.AuthoringBridge.RequiredSdk(System.Reflection.Assembly)">
+            <summary>The SDK version a module was built against; a program with an older SDK cannot run it.</summary>
         </member>
-        <member name="M:SbStudio.Authoring.DevelopmentSnapshot.#ctor(System.String,System.Collections.Generic.IReadOnlyDictionary{System.String,System.Byte[]})">
-            <summary>A stable set of source inputs shared by compilation and worker isolation.</summary>
+        <member name="M:SbStudio.Authoring.AuthoringBridge.ListItem(System.Type)">
+            <summary>The item class of a list parameter: an array or List of a plain class with a parameterless constructor.</summary>
         </member>
-        <member name="P:SbStudio.Authoring.PackageManifest.Replaces">
-            <summary>Earlier package ids whose modules this package continues, so their instances can be upgraded to it.
-            Left out of the JSON when absent, which keeps the content hash of packages written before it existed.</summary>
+        <member name="M:SbStudio.Authoring.AuthoringBridge.ItemMembers(System.Type)">
+            <summary>The members of a list item that become its fields; lists inside items are not supported.</summary>
         </member>
-        <member name="T:SbStudio.Authoring.LegacyTemplateFormat">
-            <summary>Read-only compatibility with persisted template data from the original SDK.</summary>
+        <member name="T:SbStudio.Authoring.TemplateCategory">
+            <summary>模板在库里所属的分类。</summary>
         </member>
-        <member name="T:SbStudio.Authoring.ModuleAssembly">
+        <member name="T:SbStudio.Authoring.EffectCategory">
+            <summary>效果在库里所属的分类。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.ParameterControl">
+            <summary>参数在面板上使用的控件；Auto 按字段类型自动选择。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Layer">
+            <summary>对象所在的故事板图层。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Origin">
+            <summary>图片的锚点：位置、缩放和旋转都以它为中心。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.AnimationLoop">
+            <summary>动画帧播放完后是否循环。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.FaceCameraMode">
+            <summary>编组带摄像机时对象朝向镜头的模式。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.ModuleVersion">
+            <summary>版本号，写成 "主.次.修订"，例如 "1.2.0"。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ModuleVersion.#ctor(System.String)">
+            <summary>版本号，写成 "主.次.修订"，例如 "1.2.0"。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.ModuleInfo">
+            <summary>模块的名称、身份与版本。只有 Name 和 Id 必填，其余都有默认值。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.ModuleInfo.Name">
+            <summary>在库里显示的名称；可以在 lang 文件里用 $name 翻译。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.ModuleInfo.Id">
+            <summary>模块的稳定身份，新建时自动生成，请不要修改。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.ModuleInfo.Version">
+            <summary>版本号，发布新内容时调高。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.ModuleInfo.Description">
+            <summary>模块说明；不写时取类上方的 /// 注释。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.ModuleInfo.Author">
+            <summary>作者名称。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.ModuleInfo.Website">
+            <summary>作者主页或发布页面。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.ModuleInfo.SourceLanguage">
+            <summary>代码里文字所用的语言代码，例如 "zh-Hans"、"en"。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.ModuleInfo.Replaces">
+            <summary>这个模块接替的旧模块 Id，旧实例可以升级到它。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.ModuleInfo.RenamedParameters">
+            <summary>旧参数 Id → 新参数 Id。一个旧参数拆成多个时用逗号分隔；多个颜色映射到同一色板时按声明顺序合并。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.ModuleInfo.Cacheable">
+            <summary>相同输入是否总是得到相同结果；读取外部变化内容时设为 false。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.TemplateInfo">
+            <summary>模板的信息：在 ModuleInfo 之外还有分类和时长。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.TemplateInfo.Category">
+            <summary>在模板库里所属的分类。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.TemplateInfo.Duration">
+            <summary>添加到时间轴时的默认时长（毫秒）。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.TemplateInfo.FixedDuration">
+            <summary>为 true 时用户不能调整时长。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.TemplateInfo.MinDuration">
+            <summary>用户可设置的最短时长（毫秒）。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.TemplateInfo.MaxDuration">
+            <summary>用户可设置的最长时长（毫秒）。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.EffectInfo">
+            <summary>效果的信息：在 ModuleInfo 之外还有分类。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.EffectInfo.Category">
+            <summary>在效果库里所属的分类。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Point">
+            <summary>一个位置，单位为故事板像素；可以直接写成 (x, y)。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Point.#ctor(System.Double,System.Double)">
+            <summary>一个位置，单位为故事板像素；可以直接写成 (x, y)。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Color">
+            <summary>RGB 颜色；可以写 Color.White 或 "#RRGGBB"。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Color.#ctor(System.Byte,System.Byte,System.Byte)">
+            <summary>RGB 颜色；可以写 Color.White 或 "#RRGGBB"。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Color.FromHsv(System.Double,System.Double,System.Double)">
+            <summary>由色相（度，0 红、120 绿、240 蓝）、饱和度和明度（都是 0 到 1）得到颜色。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Color.ToHsv">
+            <summary>色相（度）、饱和度和明度（0 到 1）。灰色的色相为 0。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Color.RotateHue(System.Double)">
+            <summary>色相转过 degrees 度，饱和度和明度不变。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Color.Mix(SbStudio.Authoring.Color,SbStudio.Authoring.Color,System.Double)">
+            <summary>按人眼感受的均匀程度在两色之间取色：amount 为 0 得到 a，为 1 得到 b。中间色不会像直接混合 RGB 那样发灰。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Color.Lighten(System.Double)">
+            <summary>变亮，amount 为 0 到 1；1 为白色。色相保持不变。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Color.Darken(System.Double)">
+            <summary>变暗，amount 为 0 到 1；1 为黑色。色相保持不变。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Color.ToHex">
+            <summary>写成 "#RRGGBB"。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.LongText">
+            <summary>多行文字，面板上显示为多行输入框。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.LongText.#ctor(System.String)">
+            <summary>多行文字，面板上显示为多行输入框。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Font">
+            <summary>字体名称，面板上显示为可搜索的字体选择器。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Font.#ctor(System.String)">
+            <summary>字体名称，面板上显示为可搜索的字体选择器。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Difficulty">
+            <summary>工程里的一个难度，面板上显示为难度下拉框。模板有这个参数时，Beatmap 读取这里选中的难度；没选或该难度已不在工程里时 Beatmap 没有物件。只用于模板，每个模板最多一个。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Difficulty.#ctor(System.String)">
+            <summary>工程里的一个难度，面板上显示为难度下拉框。模板有这个参数时，Beatmap 读取这里选中的难度；没选或该难度已不在工程里时 Beatmap 没有物件。只用于模板，每个模板最多一个。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Difficulty.Chosen">
+            <summary>用户是否选了难度。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Time">
+            <summary>一段时间（毫秒），面板上显示为时间输入框。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Time.#ctor(System.Double)">
+            <summary>一段时间（毫秒），面板上显示为时间输入框。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Image">
+            <summary>一张图片。文件名优先读取工程 assets，不存在时读取模块自身 assets。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Image.Local(System.String)">
+            <summary>模块自身 assets 文件夹里的图片。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Image.Project(System.String)">
+            <summary>工程素材文件夹里的图片。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Animation">
+            <summary>一组编号帧图片（name0.png、name1.png…），写基名即可。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Animation.Local(System.String)">
+            <summary>模块自身 assets 文件夹里的帧序列。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Animation.Project(System.String)">
+            <summary>工程素材文件夹里的帧序列。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.FilePath">
+            <summary>任意文件，面板上显示为文件选择按钮；用 ReadFile 读取内容。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.FilePath.Project(System.String)">
+            <summary>工程素材文件夹里的文件。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.TextStyle">
+            <summary>一组文字样式，面板上展开为字体、字号、颜色、描边、阴影等控件并带预览。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.TextAlignment">
+            <summary>多行文字的对齐方式。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.ParameterIdAttribute">
+            <summary>固定参数的身份。改字段名时写上旧名，已保存的值和翻译就不会丢。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ParameterIdAttribute.#ctor(System.String)">
+            <summary>固定参数的身份。改字段名时写上旧名，已保存的值和翻译就不会丢。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.RangeAttribute">
+            <summary>允许的最小值和最大值，超出的输入会被拒绝。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.RangeAttribute.#ctor(System.Double,System.Double)">
+            <summary>允许的最小值和最大值，超出的输入会被拒绝。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.SuggestedRangeAttribute">
+            <summary>滑块的常用区间；手动输入可以超出它。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.SuggestedRangeAttribute.#ctor(System.Double,System.Double)">
+            <summary>滑块的常用区间；手动输入可以超出它。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.StepAttribute">
+            <summary>加减按钮和拖动时每一步的大小。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.StepAttribute.#ctor(System.Double)">
+            <summary>加减按钮和拖动时每一步的大小。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.UnitAttribute">
+            <summary>显示在数值后面的单位，例如 "px"。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.UnitAttribute.#ctor(System.String)">
+            <summary>显示在数值后面的单位，例如 "px"。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.SectionAttribute">
+            <summary>把参数放进面板上的一个分组。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.SectionAttribute.#ctor(System.String)">
+            <summary>把参数放进面板上的一个分组。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.ControlAttribute">
+            <summary>指定参数使用的控件，覆盖按类型自动选择的结果。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ControlAttribute.#ctor(SbStudio.Authoring.ParameterControl)">
+            <summary>指定参数使用的控件，覆盖按类型自动选择的结果。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.SliderColorsAttribute">
+            <summary>在数值输入下显示常驻渐变滑块，颜色按顺序等距排列，需配合 Range 或 SuggestedRange。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.SliderColorsAttribute.#ctor(System.String[])">
+            <summary>在数值输入下显示常驻渐变滑块，颜色按顺序等距排列，需配合 Range 或 SuggestedRange。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.FoundNextToAttribute">
+            <summary>用户选好另一个图片参数时，自动在同一文件夹按 names 依次查找这张图（{name} 代表所选文件不含扩展名的名字）；找不到时回到默认值。只用于模板。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.FoundNextToAttribute.#ctor(System.String,System.String[])">
+            <summary>用户选好另一个图片参数时，自动在同一文件夹按 names 依次查找这张图（{name} 代表所选文件不含扩展名的名字）；找不到时回到默认值。只用于模板。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.ItemCountAttribute">
+            <summary>只在另一个 bool 或 enum 参数等于给定值时显示；写多个表示同时满足。</summary>
+            <summary>列表参数（由普通类组成的数组或 List）最少和最多可以有几项；不写表示 0 项起、不限数量。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ItemCountAttribute.#ctor(System.Int32,System.Int32)">
+            <summary>只在另一个 bool 或 enum 参数等于给定值时显示；写多个表示同时满足。</summary>
+            <summary>列表参数（由普通类组成的数组或 List）最少和最多可以有几项；不写表示 0 项起、不限数量。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.ItemNameAttribute">
+            <summary>列表参数中每一项显示的名字，{0} 是从 1 开始的序号，例如 "Layer {0}"。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ItemNameAttribute.#ctor(System.String)">
+            <summary>列表参数中每一项显示的名字，{0} 是从 1 开始的序号，例如 "Layer {0}"。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.TimingPoint">
+            <summary>一个 Timing 点：时间、每拍毫秒数、拍号与是否 Kiai。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.TimingPoint.#ctor(System.Double,System.Double,System.Int32,System.Boolean)">
+            <summary>一个 Timing 点：时间、每拍毫秒数、拍号与是否 Kiai。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.TrackPoint">
+            <summary>物件路线上的一点：歌曲绝对时间与故事板坐标。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.TrackPoint.#ctor(System.Double,SbStudio.Authoring.Point)">
+            <summary>物件路线上的一点：歌曲绝对时间与故事板坐标。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.HitObject">
+            <summary>一个物件：时间、结束时间、位置与种类。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.HitObject.#ctor(System.Double,System.Double,SbStudio.Authoring.Point,System.String)">
+            <summary>一个物件：时间、结束时间、位置与种类。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.HitObject.Track">
+            <summary>物件在屏幕上实际经过的路线，已含叠放偏移：滑条沿滑条线往返，其他物件停在原地。相邻两点之间匀速。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Beatmap">
+            <summary>谱面信息。只要代码用到，软件就会自动提供并在谱面变化时重新生成。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Beatmap.Timing">
+            <summary>全部 Timing 点（歌曲绝对时间）。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Beatmap.HitObjects">
+            <summary>全部物件（歌曲绝对时间）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Beatmap.GetHitObjects(System.Double)">
+            <summary>全部物件。sliderPrecision 是滑条追踪相对原始折线的最大位置误差（osu! 像素）；越小越精确、路线点越多。端点和往返时刻始终保留。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Beatmap.StoryboardPosition(SbStudio.Authoring.HitObject)">
+            <summary>把物件坐标换算为故事板坐标。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.StrokePosition">
+            <summary>描边画在轮廓的哪一侧。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Canvas">
             <summary>
-            A module shipped as one DLL. Its <c>module.json</c> and everything under <c>assets/</c> and <c>presets/</c> are embedded
-            resources named by their package path. Files may also sit outside the DLL, in a folder named after it next to it
-            (<c>Snow.dll</c> and <c>Snow/assets/...</c>). This only reads the file; it never loads or runs it.
+            一块可以画形状的透明画布（单位为像素），画完用 CreateImage(canvas.ToPixels()) 变成图片。
+            所有边缘都带抗锯齿；softness 让边缘柔和过渡指定的像素宽度。
+            想让同一张图换颜色时，画成白色再用 Color 命令着色，这样颜色怎么变都只需要一张图。
             </summary>
         </member>
-        <member name="M:SbStudio.Authoring.ModuleAssembly.IsModule(System.String)">
-            <summary>Whether the file is a .NET assembly that carries an embedded module manifest.</summary>
+        <member name="M:SbStudio.Authoring.Canvas.Clear">
+            <summary>清空为全透明。</summary>
         </member>
-        <member name="M:SbStudio.Authoring.ModuleAssembly.ReadManifest(System.String)">
-            <summary>The manifest as the DLL declares it, before its package is built.</summary>
+        <member name="M:SbStudio.Authoring.Canvas.Clear(SbStudio.Authoring.Color,System.Double)">
+            <summary>整块画布填成一种颜色。</summary>
         </member>
-        <member name="M:SbStudio.Authoring.ModuleAssembly.SourceHash(System.String)">
-            <summary>Identifies what the DLL expands to: its bytes, the files next to it and the SDK that describes it.</summary>
+        <member name="M:SbStudio.Authoring.Canvas.Fill(SbStudio.Authoring.Shape,SbStudio.Authoring.Color,System.Double,System.Double)">
+            <summary>用一种颜色填充形状。</summary>
         </member>
-        <member name="M:SbStudio.Authoring.ModuleAssembly.Expand(System.String,System.String)">
-            <summary>Writes a package source folder (manifest, <c>lib/</c> DLL, assets and presets) that the host can then describe and seal.</summary>
+        <member name="M:SbStudio.Authoring.Canvas.Fill(SbStudio.Authoring.Shape,SbStudio.Authoring.Gradient,System.Double,System.Double,System.Double)">
+            <summary>用渐变填充形状：angle 为渐变方向（度），0 从左到右，90 从上到下；渐变铺满形状的外框。</summary>
         </member>
-        <member name="M:SbStudio.Authoring.ModuleAssembly.ReadResource(System.String,System.String)">
-            <summary>One embedded file of the DLL, or null when it has none by that path.</summary>
+        <member name="M:SbStudio.Authoring.Canvas.Stroke(SbStudio.Authoring.Shape,System.Double,SbStudio.Authoring.Color,SbStudio.Authoring.StrokePosition,System.Double,System.Double)">
+            <summary>沿形状的轮廓画一条 width 像素宽的线；线条形状的两端为圆头。</summary>
         </member>
-        <member name="T:SbStudio.Authoring.StableRandom">
-            <summary>Version 1: SplitMix64 with an unsigned 32-bit seed and 53-bit double output.</summary>
+        <member name="M:SbStudio.Authoring.Canvas.ToPixels">
+            <summary>复制出当前的 RGBA 像素。</summary>
         </member>
-        <member name="T:SbStudio.Authoring.PackageFiles">
-            <summary>Shared package validation; this never loads or executes assemblies.</summary>
+        <member name="T:SbStudio.Authoring.Shape">
+            <summary>可以填充或描边的形状。坐标单位为像素，原点在画布左上角。</summary>
         </member>
-        <member name="T:SbStudio.Authoring.GroupEffects.GroupEffectRules">
-            <summary>The single output contract used by builders, the worker and document adapters.</summary>
+        <member name="M:SbStudio.Authoring.Shape.Row(System.Double,System.Double,System.Double[],System.Double)">
+            <summary>Signed distances (negative inside) of the pixels of one row; values past <paramref name="band"/> may be clamped.</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Shape.Expand(System.Double)">
+            <summary>向外扩大 distance 像素（负数为向内收缩）后的形状；拐角随之变圆，用于做外框、内框或让填充让出描边的位置。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Shape.Rectangle(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>矩形，x、y 为左上角；cornerRadius 为圆角半径。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Shape.Ellipse(SbStudio.Authoring.Point,System.Double,System.Double)">
+            <summary>椭圆。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Shape.Circle(SbStudio.Authoring.Point,System.Double)">
+            <summary>圆。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Shape.Polygon(SbStudio.Authoring.Point[])">
+            <summary>依次连接各点围成的多边形，可以是凹的。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Shape.RegularPolygon(SbStudio.Authoring.Point,System.Double,System.Int32,System.Double)">
+            <summary>正多边形：radius 为中心到顶点的距离；rotationDegrees 为 0 时第一个顶点朝上。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Shape.Star(SbStudio.Authoring.Point,System.Double,System.Double,System.Int32,System.Double)">
+            <summary>星形：points 个尖角，外半径到尖角，内半径到凹处；rotationDegrees 为 0 时第一个尖角朝上。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Shape.Line(SbStudio.Authoring.Point[])">
+            <summary>依次连接各点的线条，只能描边。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Shape.FromSpline(SbStudio.Authoring.Spline,System.Double)">
+            <summary>由曲线得到形状：闭合曲线可以填充，不闭合的只能描边。tolerance 为允许的偏差（像素）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Shape.Around(SbStudio.Authoring.Point,System.Double,System.Double,System.Double)">
+            <summary>A point at <paramref name="degrees"/> clockwise from straight up.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Gradient">
+            <summary>多种颜色组成的渐变；位置从 0 到 1，颜色之间按人眼感受均匀过渡。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Gradient.#ctor(SbStudio.Authoring.Color[])">
+            <summary>颜色按顺序等距排列，第一个在 0，最后一个在 1。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Gradient.#ctor(System.ValueTuple{System.Double,SbStudio.Authoring.Color}[])">
+            <summary>每个颜色写上它的位置（0 到 1），顺序任意。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Gradient.At(System.Double)">
+            <summary>position 处（0 到 1，超出时取两端）的颜色。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Gradient.Steps(System.Int32)">
+            <summary>从头到尾等距取 count 个颜色。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Lab">
+            <summary>A colour in a perceptually uniform space (lightness, green–red, blue–yellow), used for mixing.</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Lab.#ctor(System.Double,System.Double,System.Double)">
+            <summary>A colour in a perceptually uniform space (lightness, green–red, blue–yellow), used for mixing.</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Lab.ToUnit">
+            <summary>Straight sRGB channels in 0..1, for drawing.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Commands`1">
+            <summary>关键帧与 osb 命令写法，两者可以混用。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Commands`1.At(System.Double,SbStudio.Authoring.Ease)">
+            <summary>跳到 time 毫秒处写关键帧；ease 描述从上一帧到这一帧怎么变化。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Ease">
+            <summary>到达关键帧的缓动；默认线性，Step 在到达时跳变。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Ease.Curve(SbStudio.Authoring.Point[])">
+            <summary>组运动的自绘曲线，必须包含 (0,0) 与 (1,1)。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.EffectKeyframe`1">
+            <summary>设置这个时间点的属性，缓动描述从上一帧到达这一帧的过程。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectKeyframe`1.At(System.Double,SbStudio.Authoring.Ease)">
+            <summary>继续在另一个时间写关键帧。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectKeyframe`1.Offset(System.Double,System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧相对原位置的偏移。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectKeyframe`1.Offset(SbStudio.Authoring.Point,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧相对原位置的偏移。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectKeyframe`1.OffsetX(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的横向偏移。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectKeyframe`1.OffsetY(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的纵向偏移。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectKeyframe`1.Scale(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的缩放倍数（1 为不变）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectKeyframe`1.Rotation(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的旋转（度）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectKeyframe`1.Depth(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的深度（需要摄像机）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectKeyframe`1.RotationX(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧绕横轴的旋转（度）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectKeyframe`1.RotationY(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧绕纵轴的旋转（度）。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.EffectTarget">
+            <summary>被应用效果的编组。写的运动叠加在编组原有动画之上，开头和结尾必须回到原位。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.EffectTarget.Name">
+            <summary>编组名称。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.EffectTarget.Pivot">
+            <summary>编组变换的中心点。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.EffectTarget.ContentStartTime">
+            <summary>编组内容最早开始的时间。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.EffectTarget.ContentEndTime">
+            <summary>编组内容最晚结束的时间。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.EffectTarget.Members">
+            <summary>编组里的成员结构（只读）。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.ImageFrame">
+            <summary>不可变图片帧，保留逻辑画布与内容偏移。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ImageFrame.GaussianBlur(System.Double)">
+            <summary>返回高斯模糊后的新图片，尺寸不变。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ImageFrame.ToJpeg(System.Int32)">
+            <summary>返回尺寸不变的 JPG 新图片：透明的地方变成黑色，半透明的颜色按透明度压暗。quality 为 1 到 100。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.ImageFrame.ReadPixels">
+            <summary>读取 RGBA 像素。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.GifFrame">
+            <summary>GIF 的一帧与它的显示时长（毫秒）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.GifFrame.#ctor(SbStudio.Authoring.ImageFrame,System.Int32)">
+            <summary>GIF 的一帧与它的显示时长（毫秒）。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.EffectVisual">
+            <summary>读取成员及其完整图片区间，替换只影响当前效果的输出。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectVisual.Replace(System.Func{SbStudio.Authoring.ImageFrame,SbStudio.Authoring.ImageFrame})">
+            <summary>把这个对象的每一帧替换为 transform 返回的图片。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.EffectVisual.ReplaceTimed(System.Double,System.Func{SbStudio.Authoring.ImageFrame,System.Double,SbStudio.Authoring.ImageFrame})">
+            <summary>按 frameDuration 毫秒的时间格替换图片；回调接收输入帧和精确的效果局部采样时间，输出区间取整到毫秒，原动画帧顺序与播放时钟保持不变。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Keyframe`1">
+            <summary>设置这个时间点的属性，缓动描述从上一帧到达这一帧的过程。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.At(System.Double,SbStudio.Authoring.Ease)">
+            <summary>继续在另一个时间写关键帧。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.Position(System.Double,System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的位置。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.Position(SbStudio.Authoring.Point,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的位置。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.X(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的横坐标。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.Y(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的纵坐标。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.Scale(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的缩放（1 为原尺寸）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.Scale(System.Double,System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的横向与纵向缩放。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.Rotation(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的旋转角度（度，顺时针）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.Opacity(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的不透明度：0 为看不见，1 为完全显示。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.Color(SbStudio.Authoring.Color,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>这一帧的颜色叠加。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.Depth(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>编组的深度（需要摄像机）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.RotationX(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>编组绕横轴旋转（度）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.RotationY(System.Double,System.Nullable{SbStudio.Authoring.Ease},System.Int32,System.String)">
+            <summary>编组绕纵轴旋转（度）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.FlipH(System.Boolean,System.Int32,System.String)">
+            <summary>从这一帧起是否水平翻转。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.FlipV(System.Boolean,System.Int32,System.String)">
+            <summary>从这一帧起是否垂直翻转。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Keyframe`1.Additive(System.Boolean,System.Int32,System.String)">
+            <summary>从这一帧起是否使用加法混合（变亮）。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Mesh">
+            <summary>编组里的一个 3D 网格模型。顶点是 x、y、z 依次排列的坐标（X 向右、Y 向下、Z 远离观众），面是每三个一组的顶点序号，绕向让正面朝向观众（-Z 一侧）。</summary>
+        </member>
+        <member name="F:SbStudio.Authoring.Mesh.MaxVertices">
+            <summary>与编辑器一致的顶点和面上限。</summary>
+        </member>
+        <member name="F:SbStudio.Authoring.Mesh.MaxFaces">
+            <summary>与编辑器一致的顶点和面上限。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Mesh.Color(SbStudio.Authoring.Color)">
+            <summary>整个网格的整体颜色；不写时保持模型默认色。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Mesh.FaceColors(SbStudio.Authoring.Color[])">
+            <summary>每个面各自的颜色，数量必须与面数一致。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Mesh.Unlit(System.Boolean)">
+            <summary>不受光照，直接显示原色。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Mesh.DoubleSided(System.Boolean)">
+            <summary>背面也画出来；不写时只画朝向观众的一面。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Mesh.Wireframe">
+            <summary>只画线框。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Mesh.SolidAndWireframe">
+            <summary>面和线框一起画。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Module">
+            <summary>模板和效果共同的基础：时长、谱面、随机数、读取素材与提示信息。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Module.Duration">
+            <summary>这个实例的时长（毫秒）。所有时间都从 0 开始计算。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Module.Beatmap">
+            <summary>谱面信息：Timing、物件、标题等。用到时软件会自动提供。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.AbsoluteTime(System.Double)">
+            <summary>把实例内的时间换算成歌曲中的绝对时间。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.LocalTime(System.Double)">
+            <summary>把歌曲中的绝对时间换算成实例内的时间。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.Random(System.Int32)">
+            <summary>一个独立的随机序列：相同的 seed 总是得到相同的数。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.RandomNumber(System.Double,System.Double)">
+            <summary>min 到 max 之间的随机小数。面板上的“换一批”会换一组结果。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.RandomInt(System.Int32,System.Int32)">
+            <summary>min 到 max 之间（不含 max）的随机整数。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.RandomPoint">
+            <summary>屏幕范围内的随机位置。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.Chance(System.Double)">
+            <summary>以 probability（0 到 1）的概率返回 true。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.MoveToward(SbStudio.Authoring.Point,System.Double,System.Double)">
+            <summary>从 point 沿 degrees 方向（0 为向右，90 为向下）移动 distance 后的位置。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.ReadFile(SbStudio.Authoring.FilePath)">
+            <summary>读取文件参数的全部内容。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.ImageSize(SbStudio.Authoring.Image)">
+            <summary>图片的宽和高（像素）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.WriteAsset(System.String,System.ReadOnlySpan{System.Byte})">
+            <summary>把生成的数据写成素材并返回它。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.RenderText(System.String,SbStudio.Authoring.TextStyle)">
+            <summary>把文字按样式画成一张图片。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.RenderTextLayout(System.String,SbStudio.Authoring.TextStyle)">
+            <summary>把文字画成图片，并返回尺寸与对齐偏移。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.OpenImage(SbStudio.Authoring.Image)">
+            <summary>打开图片以读取或处理像素。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.CreateImage(SbStudio.Authoring.Pixels,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>用像素数据创建一张新图片。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.OpenGif(SbStudio.Authoring.Image)">
+            <summary>逐帧读取 GIF：每帧都是合成后的完整画面，并带有显示时长（毫秒）。不是 GIF 时返回空列表。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.WriteAnimation(System.String,System.Collections.Generic.IReadOnlyList{SbStudio.Authoring.ImageFrame})">
+            <summary>把同一格式的 PNG 或 JPG 图片写成编号帧序列（name0.png 或 name0.jpg…），得到可用于 AddAnimation 的素材；保留编码内容，不重新压缩。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.Fail(System.String,System.Object[])">
+            <summary>停止生成并显示这条错误。文字可以写 {0} 占位，并在 lang 文件中翻译。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.Warn(System.String,System.Object[])">
+            <summary>显示一条黄色提示，生成照常完成。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.Log(System.String,System.Object[])">
+            <summary>写一条日志，在实例属性中查看。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.Beats(System.Int32)">
+            <summary>返回实例范围内的拍点，使用谱面的绝对时间并换算为局部毫秒。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Module.CheckCancellation">
+            <summary>Stops a long-running generation or pixel-processing loop when its request is cancelled.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.RandomSequence">
+            <summary>由 Random(seed) 得到的可复现随机序列。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Screen">
+            <summary>故事板屏幕范围：宽屏为 -107 到 747，高 0 到 480。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.SdkException">
+            <summary>SDK 报告的错误，带错误代码与参数。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.SdkException.#ctor(System.String,System.String,System.Object[])">
+            <summary>SDK 报告的错误，带错误代码与参数。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Template">
+            <summary>模板：在 Generate 里添加图片并写动画。带 public 的字段会出现在设置面板。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Template.AnalyzeSpectrum(SbStudio.Authoring.SpectrumOptions)">
+            <summary>分析当前输入难度的音乐。移动或伸缩实例、替换音乐时自动重新生成；数据可以用于任意布局。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Template.Info">
+            <summary>模板的名称、身份、版本与分类。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Template.Generate">
+            <summary>生成内容。每次参数变化都会用新的实例重新运行。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Template.AddSprite(SbStudio.Authoring.Image,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>用图片素材添加一个故事板精灵，返回它以便写动画。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Template.AddSpriteFromProject(System.String,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>用工程 assets 文件夹里的图片添加故事板精灵；path 相对于 assets，子目录使用 /。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Template.AddSpriteFromLocal(System.String,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>只用模块自身 assets 文件夹里的图片添加故事板精灵。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Template.AddAnimation(SbStudio.Authoring.Animation,System.Int32,System.Double,SbStudio.Authoring.AnimationLoop,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>添加帧动画；frameCount 为帧数，frameDelay 为每帧毫秒数。自动来源由第 0 帧确定，整组帧来自同一来源。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Template.AddAnimationFromProject(System.String,System.Int32,System.Double,SbStudio.Authoring.AnimationLoop,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>只用故事板工程 assets 中的帧序列添加动画。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Template.AddAnimationFromLocal(System.String,System.Int32,System.Double,SbStudio.Authoring.AnimationLoop,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>只用模块自身 assets 中的帧序列添加动画。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Template.AddGroup(System.String)">
+            <summary>添加一个编组，可以在其中继续添加图片并整体运动。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Effect">
+            <summary>效果：给选中的编组追加运动或替换图片。带 public 的字段会出现在设置面板。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Effect.Info">
+            <summary>效果的名称、身份、版本与分类。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Effect.Apply">
+            <summary>应用效果。每次参数变化都会用新的实例重新运行。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Effect.Target">
+            <summary>被应用效果的编组：用 At(...) 写它的位移、缩放、旋转。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Effect.Visuals">
+            <summary>编组里的每一个图片或动画对象。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Effect.Images">
+            <summary>编组里的图片，可逐帧读取并替换。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.MotionCommands`1">
+            <summary>效果目标的关键帧与命令写法。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.MotionCommands`1.At(System.Double,SbStudio.Authoring.Ease)">
+            <summary>跳到 time 毫秒处写关键帧；ease 描述从上一帧到这一帧怎么变化。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.RenderedText">
+            <summary>文字图片及其尺寸、对齐偏移。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.RenderedText.Lines">
+            <summary>整段排版后的行与文字元素位置；坐标相对逻辑画布左上角，不含描边和阴影留白。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.TextLineLayout">
+            <summary>自动换行和对齐后的文字行；StartIndex 为原文字中的 UTF-16 索引。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.TextLineLayout.#ctor(System.String,System.Int32,System.Double,System.Double,System.Double,System.Collections.Generic.IReadOnlyList{SbStudio.Authoring.TextElementLayout})">
+            <summary>自动换行和对齐后的文字行；StartIndex 为原文字中的 UTF-16 索引。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.TextElementLayout">
+            <summary>一个完整文字元素（含组合附加符号）；StartIndex/Length 为原文字中的 UTF-16 范围。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.TextElementLayout.#ctor(System.Int32,System.Int32,SbStudio.Authoring.Point,SbStudio.Authoring.Point)">
+            <summary>一个完整文字元素（含组合附加符号）；StartIndex/Length 为原文字中的 UTF-16 范围。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.RgbCurves">
+            <summary>RGB master and individual red, green, blue intensity curves, edited with a shared graphical control.</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.RgbCurves.#ctor(System.Collections.Generic.IEnumerable{SbStudio.Authoring.Point},System.Collections.Generic.IEnumerable{SbStudio.Authoring.Point},System.Collections.Generic.IEnumerable{SbStudio.Authoring.Point},System.Collections.Generic.IEnumerable{SbStudio.Authoring.Point})">
+            <summary>Creates curves with normalized points including endpoints at input 0 and 1. Omitted curves stay linear.</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.RgbCurves.LookupTables">
+            <summary>Three 256-byte lookup tables: RGB master first, individual channel second. Alpha is unaffected.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.SpectrumOptions">
+            <summary>频谱分析设置。分析数据与直线、环形等显示布局无关。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.SpectrumData">
+            <summary>真实音乐的离线频谱，时间为实例内毫秒，幅度为线性幅度（静音为0）。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Spline">
+            <summary>
+            一条平面曲线：折线、经过各点的平滑曲线、贝塞尔曲线、圆弧或椭圆。
+            位置按长度计算：PointAt(0.5) 总是在曲线的正中间，所以沿曲线匀速运动只需让比例随时间均匀增加。
+            </summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Spline.Closed">
+            <summary>首尾相连的曲线；PointAt 的比例超出 0 到 1 时绕回。</summary>
+        </member>
+        <member name="P:SbStudio.Authoring.Spline.Length">
+            <summary>曲线的总长度（与点的单位相同，通常是故事板像素）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.Lines(SbStudio.Authoring.Point[])">
+            <summary>依次连接各点的折线。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.LinesClosed(SbStudio.Authoring.Point[])">
+            <summary>依次连接各点并回到第一个点的折线。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.Through(SbStudio.Authoring.Point[])">
+            <summary>平滑地依次经过每一个点；拐角处不会冲过头或打结。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.ThroughClosed(SbStudio.Authoring.Point[])">
+            <summary>平滑地经过每一个点并回到第一个点。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.Bezier(SbStudio.Authoring.Point[])">
+            <summary>一条贝塞尔曲线：从第一个点出发、到最后一个点结束，中间的点只牵引方向。两个点为直线，三个点为二次，四个点为三次，更多点也可以。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.Arc(SbStudio.Authoring.Point,System.Double,System.Double,System.Double)">
+            <summary>圆弧：startDegrees 为起始角（0 向右，90 向下），sweepDegrees 为转过的角度，正数顺时针。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.Ellipse(SbStudio.Authoring.Point,System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>完整的椭圆，从 startDegrees 处出发（0 向右，90 向下），clockwise 为 true 时顺时针。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.PointAt(System.Double)">
+            <summary>位于全长 fraction 处的点（0 为起点，1 为终点）。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.DirectionAt(System.Double)">
+            <summary>位于全长 fraction 处的前进方向（度）：0 向右，90 向下，与故事板的旋转方向一致。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.Points(System.Int32)">
+            <summary>沿曲线等距取 count 个点；闭合曲线不重复起点。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.Flatten(System.Double)">
+            <summary>
+            把曲线变成尽量少的直线段：每段与曲线的偏差不超过 tolerance（默认 0.25 像素）。
+            直线部分不会被多余地切开。闭合曲线的最后一个点与第一个点相同。
+            </summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Spline.Piece.Flatten(System.Double,System.Collections.Generic.List{SbStudio.Authoring.Point},System.Collections.Generic.List{System.Double})">
+            <summary>Appends the end of every step after the piece's start.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Spline.SmoothPiece">
+            <summary>A span between p1 and p2 of a curve through the points, with knots spaced by the square root of the distance.</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Visual">
+            <summary>一张图片或一个帧动画。用 At(时间).属性(值) 写关键帧，也可以直接写 osb 命令。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Visual.Name(System.String)">
+            <summary>在时间轴上显示的名称。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Visual.Key(System.String)">
+            <summary>重新生成时用来认出同一个对象的稳定键。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Visual.Position(System.Double,System.Double)">
+            <summary>对象的初始位置。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Visual.FaceCamera(System.Boolean)">
+            <summary>编组带摄像机时，让对象始终面向镜头。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Visual.FaceCamera(SbStudio.Authoring.FaceCameraMode)">
+            <summary>编组带摄像机时，设置对象朝向镜头的模式。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Visual.Loop(System.Double,System.Int32,System.Action{SbStudio.Authoring.CommandBlock})">
+            <summary>循环块：commands 中的时间相对块开始，重复 loopCount 次。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Visual.Trigger(System.String,System.Double,System.Double,System.Action{SbStudio.Authoring.CommandBlock},System.Int32)">
+            <summary>触发块：在 startTime 到 endTime 之间满足触发条件时播放 commands。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.CommandBlock">
+            <summary>Loop 或 Trigger 块里的命令。</summary>
+        </member>
+        <member name="T:SbStudio.Authoring.Group">
+            <summary>编组：组内对象随编组一起移动、缩放、旋转。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Group.Pivot(System.Double,System.Double)">
+            <summary>编组变换的中心点。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Group.Position(System.Double,System.Double)">
+            <summary>编组的初始位置。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Group.AddSprite(SbStudio.Authoring.Image,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>用图片素材在编组里添加一个故事板精灵。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Group.AddSpriteFromProject(System.String,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>用工程 assets 文件夹里的图片在编组中添加故事板精灵；path 相对于 assets，子目录使用 /。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Group.AddSpriteFromLocal(System.String,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>只用模块自身 assets 里的图片在编组中添加精灵。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Group.AddAnimation(SbStudio.Authoring.Animation,System.Int32,System.Double,SbStudio.Authoring.AnimationLoop,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>在编组里添加一个帧动画，默认优先工程 assets，再用模块 assets。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Group.AddAnimationFromProject(System.String,System.Int32,System.Double,SbStudio.Authoring.AnimationLoop,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>只用工程 assets 中的帧序列在编组中添加动画。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Group.AddAnimationFromLocal(System.String,System.Int32,System.Double,SbStudio.Authoring.AnimationLoop,SbStudio.Authoring.Layer,SbStudio.Authoring.Origin)">
+            <summary>只用模块自身 assets 中的帧序列在编组中添加动画。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Group.AddGroup(System.String)">
+            <summary>在编组里添加子编组。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Group.Mesh(System.Double[],System.Int32[],System.Double,System.Double,SbStudio.Authoring.Layer)">
+            <summary>把一个 3D 网格模型放进编组：vertices 是 x、y、z 依次排列的坐标，faces 是每三个一组的顶点序号；显示时间与图层决定它何时出现在哪里。</summary>
         </member>
     </members>
 </doc>

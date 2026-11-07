@@ -28,14 +28,20 @@ Libraries
 ---------
 
 .NET 10 reference assemblies 10.0.13 (authoring/host/refs)
-  Used by the template host to compile template source code. The .NET runtime itself is not
-  included: the program runs on the .NET 10 installed on the computer.
+  Used by the authoring host to compile module source code. Portable packages include one
+  shared .NET runtime in dotnet/ for the editor, authoring host and updater.
   https://github.com/dotnet/runtime
   Copyright (c) .NET Foundation and Contributors
   Licence: MIT (Part 2, "MIT licence - .NET Foundation and Contributors")
 
 Microsoft.Extensions.DependencyModel 8.0.0 and Microsoft.DotNet.PlatformAbstractions 3.1.6
   https://github.com/dotnet/runtime
+  Copyright (c) .NET Foundation and Contributors
+  Licence: MIT (Part 2, "MIT licence - .NET Foundation and Contributors")
+
+System.Drawing.Common and Microsoft.Win32.SystemEvents 10.0.12
+  Used by the Windows authoring worker to lay out and rasterize lyric text.
+  https://github.com/dotnet/winforms
   Copyright (c) .NET Foundation and Contributors
   Licence: MIT (Part 2, "MIT licence - .NET Foundation and Contributors")
 
@@ -1256,3 +1262,5 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
+
+Authoring SDK analyzer: Microsoft.CodeAnalysis.CSharp 4.4.0 (Microsoft, MIT), https://github.com/dotnet/roslyn. The host compiler continues to use 5.0.0.

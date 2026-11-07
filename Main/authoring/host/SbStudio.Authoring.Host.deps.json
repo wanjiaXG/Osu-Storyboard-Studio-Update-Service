@@ -7,10 +7,12 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {},
     ".NETCoreApp,Version=v10.0/win-x64": {
-      "SbStudio.Authoring.Host/0.3.0-beta.3": {
+      "SbStudio.Authoring.Host/0.4.0-beta.3": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "5.0.0",
-          "SbStudio.Authoring.Sdk": "0.3.0-beta.3"
+          "SbStudio.Authoring.Analyzers": "0.4.0-beta.3",
+          "SbStudio.Authoring.Runtime": "0.4.0-beta.3",
+          "SbStudio.Authoring.Sdk": "0.4.0-beta.3"
         },
         "runtime": {
           "SbStudio.Authoring.Host.dll": {}
@@ -117,18 +119,99 @@
           }
         }
       },
-      "SbStudio.Authoring.Sdk/0.3.0-beta.3": {
+      "Microsoft.Win32.SystemEvents/10.0.12": {
+        "runtime": {
+          "runtimes/win/lib/net10.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          }
+        }
+      },
+      "ppy.ManagedBass/2022.1216.0": {
+        "runtime": {
+          "lib/netstandard2.1/ppy.ManagedBass.dll": {
+            "assemblyVersion": "2022.1216.0.0",
+            "fileVersion": "2022.1216.0.0"
+          }
+        }
+      },
+      "StbImageSharp/2.30.15": {
+        "runtime": {
+          "lib/netstandard2.0/StbImageSharp.dll": {
+            "assemblyVersion": "2.30.15.0",
+            "fileVersion": "2.30.15.0"
+          }
+        }
+      },
+      "System.Drawing.Common/10.0.12": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "10.0.12"
+        },
+        "runtime": {
+          "lib/net10.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          },
+          "lib/net10.0/System.Private.Windows.Core.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          },
+          "lib/net10.0/System.Private.Windows.GdiPlus.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.1226.42308"
+          }
+        }
+      },
+      "SbStudio.Authoring.Analyzers/0.4.0-beta.3": {
+        "runtime": {
+          "SbStudio.Authoring.Analyzers.dll": {
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.4.0.0"
+          }
+        },
+        "resources": {
+          "zh-Hans/SbStudio.Authoring.Analyzers.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "SbStudio.Authoring.Contracts/0.4.0-beta.3": {
+        "runtime": {
+          "SbStudio.Authoring.Contracts.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "SbStudio.Authoring.Runtime/0.4.0-beta.3": {
+        "dependencies": {
+          "SbStudio.Authoring.Contracts": "0.4.0-beta.3",
+          "StbImageSharp": "2.30.15",
+          "System.Drawing.Common": "10.0.12",
+          "ppy.ManagedBass": "2022.1216.0"
+        },
+        "runtime": {
+          "SbStudio.Authoring.Runtime.dll": {
+            "assemblyVersion": "0.4.0.0",
+            "fileVersion": "0.4.0.0"
+          }
+        }
+      },
+      "SbStudio.Authoring.Sdk/0.4.0-beta.3": {
+        "dependencies": {
+          "SbStudio.Authoring.Contracts": "0.4.0-beta.3"
+        },
         "runtime": {
           "SbStudio.Authoring.Sdk.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
+            "assemblyVersion": "4.13.0.0",
+            "fileVersion": "4.13.0.0"
           }
         }
       }
     }
   },
   "libraries": {
-    "SbStudio.Authoring.Host/0.3.0-beta.3": {
+    "SbStudio.Authoring.Host/0.4.0-beta.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -147,7 +230,50 @@
       "path": "microsoft.codeanalysis.csharp/5.0.0",
       "hashPath": "microsoft.codeanalysis.csharp.5.0.0.nupkg.sha512"
     },
-    "SbStudio.Authoring.Sdk/0.3.0-beta.3": {
+    "Microsoft.Win32.SystemEvents/10.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kdj5cqOwgZCMltEhQ4+WVUoFkMHG08EJfy1MDyS9H+FBg66vTTFyX8YcNl8IQh5wRQv79P+iduQgDGY8ucBR+w==",
+      "path": "microsoft.win32.systemevents/10.0.12",
+      "hashPath": "microsoft.win32.systemevents.10.0.12.nupkg.sha512"
+    },
+    "ppy.ManagedBass/2022.1216.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M4qapV6rapjvLD7b/O9RmCeS4ysRpLOS6JxyTaULq7KZ4BdZ+q+Q7kAHEa4RYApWr0KrT+7fLBIH7bGPoyxPCg==",
+      "path": "ppy.managedbass/2022.1216.0",
+      "hashPath": "ppy.managedbass.2022.1216.0.nupkg.sha512"
+    },
+    "StbImageSharp/2.30.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7QqbupVhz2kcFUPTgMw4iHR9rYDHGundzzee19Mwmd1typ2Lnv8EVJcLJxlkeBM2+4ex0NwsMtdbGSJctp1XCQ==",
+      "path": "stbimagesharp/2.30.15",
+      "hashPath": "stbimagesharp.2.30.15.nupkg.sha512"
+    },
+    "System.Drawing.Common/10.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FBUxiucg2gsnyItbpGgyXI5u8FYLcqdLKS1XJkHHTj3RK1c6kpsJr/Y9i4edUNF7LqCYFrHqpHEvpt8/lNBe9w==",
+      "path": "system.drawing.common/10.0.12",
+      "hashPath": "system.drawing.common.10.0.12.nupkg.sha512"
+    },
+    "SbStudio.Authoring.Analyzers/0.4.0-beta.3": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SbStudio.Authoring.Contracts/0.4.0-beta.3": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SbStudio.Authoring.Runtime/0.4.0-beta.3": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SbStudio.Authoring.Sdk/0.4.0-beta.3": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
