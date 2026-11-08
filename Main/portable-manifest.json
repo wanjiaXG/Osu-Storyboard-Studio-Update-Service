@@ -2,7 +2,7 @@
     "version":  "0.4.0-beta.3",
     "files":  [
                   {
-                      "sha256":  "9b256ee673c64f6b09883f82cb26fe1da68044bce9e050056fcdb9a82c2a11ae",
+                      "sha256":  "de5c8447134a6d287709c0851f834834d5c336ea8d147404bd6c0bfafc19698e",
                       "path":  "authoring/authoring.md"
                   },
                   {
@@ -778,27 +778,27 @@
                       "path":  "authoring/host/ru/Microsoft.CodeAnalysis.resources.dll"
                   },
                   {
-                      "sha256":  "b45b48ab7e3be571cda23cd406d2654c4ce1ecf519e2c9d1da4c5661674f9d1d",
+                      "sha256":  "4f615e5c04c46185a71d38dc209e0a893d057b63312cf24f82f85a47f5df4fa9",
                       "path":  "authoring/host/SbStudio.Authoring.Analyzers.dll"
                   },
                   {
-                      "sha256":  "b699034783c71c8e116b502c6fe0cda8949d17895ce2d4bfa6ac1c5c6742da53",
+                      "sha256":  "02c1af078ffff4eaed4a55aba8be4218642d0e821d4d6714ef21e7b2407d9b48",
                       "path":  "authoring/host/SbStudio.Authoring.Analyzers.pdb"
                   },
                   {
-                      "sha256":  "c4c3f9538278331f8cd18d913448de8a5ffec96726cc3f9f4ea749871598f33f",
+                      "sha256":  "fe2896d5f94fdb0defedc58e238082aad7174b1ab20befe9d89ad4f2d37b568f",
                       "path":  "authoring/host/SbStudio.Authoring.Contracts.dll"
                   },
                   {
-                      "sha256":  "b9772aeb71536ce5cce944b1cc696acef1b2272a77004705b3ed7fad8c4a9abb",
+                      "sha256":  "7bbc0dbb65b2f587cfb36ebdc6050fd32d117f09d3938dca8464205f6f7c1140",
                       "path":  "authoring/host/SbStudio.Authoring.Contracts.pdb"
                   },
                   {
-                      "sha256":  "7a3560c24047c4988442cb0559059f72fcec6142d4d6397310f02a640c7acb60",
+                      "sha256":  "c0f2411ecc32b7e673052bdfff26731d36039cd1678f9087b3811550f769c3fa",
                       "path":  "authoring/host/SbStudio.Authoring.Host.deps.json"
                   },
                   {
-                      "sha256":  "7ca9af6abb71892320b1f394508d3e1378b0e2d53bf160f8fa975db798376589",
+                      "sha256":  "a2d85b81e202c4ea011afc305128085d00c7af894a9efcc309fadf91e3f587aa",
                       "path":  "authoring/host/SbStudio.Authoring.Host.dll"
                   },
                   {
@@ -806,7 +806,7 @@
                       "path":  "authoring/host/SbStudio.Authoring.Host.exe"
                   },
                   {
-                      "sha256":  "f54d68e75c91c1a5cc85888b5c2cbaa123d101cb3f90beccedd217fb336d399d",
+                      "sha256":  "565c79630acbcc49df6c1beeec98705d6f3742bead1bacd127a4d179f2919233",
                       "path":  "authoring/host/SbStudio.Authoring.Host.pdb"
                   },
                   {
@@ -814,23 +814,23 @@
                       "path":  "authoring/host/SbStudio.Authoring.Host.runtimeconfig.json"
                   },
                   {
-                      "sha256":  "1533781f068619ab26634911b1de260f58192bcc3b60b11e8b10381bfa5fb2f1",
+                      "sha256":  "016c3c1a9a5748ae11b5b801474480e32aef6978057cf67af20946a0fe27a968",
                       "path":  "authoring/host/SbStudio.Authoring.Runtime.dll"
                   },
                   {
-                      "sha256":  "42135fa31dfa7fe42bd4cc7808cb12fc4666760161835034df640eee48caf704",
+                      "sha256":  "0c6a3a8f2e8e4786fd4dc3d55e4f60305ecde4239b634f317e13202e5f05b9af",
                       "path":  "authoring/host/SbStudio.Authoring.Runtime.pdb"
                   },
                   {
-                      "sha256":  "e2569757b6711a2ca75050afebd502842c567e26fe56a5145121e2ac995da500",
+                      "sha256":  "e388062b139a24def5c7d2482136a1fdbebb5f624a51468e297e2c206859ce09",
                       "path":  "authoring/host/SbStudio.Authoring.Sdk.dll"
                   },
                   {
-                      "sha256":  "bc95c871af18b3973d4d5e82b44e15acab01ca65e50151fc11f6dedc5278563c",
+                      "sha256":  "93199f0508d3c87f621ae256661db20e929864bf5ac9fd94462f51107d66d1ca",
                       "path":  "authoring/host/SbStudio.Authoring.Sdk.pdb"
                   },
                   {
-                      "sha256":  "84eda1393978663bee17bbc6170d57d8d43dd4e5f9562ff472e3207e18098e23",
+                      "sha256":  "551b6019e656f22799da465075edf03c512f34739ba4b10a2ec0a6902037102a",
                       "path":  "authoring/host/SbStudio.Authoring.Sdk.xml"
                   },
                   {
@@ -1666,67 +1666,67 @@
                       "path":  "dotnet/shared/Microsoft.NETCore.App/10.0.13/WindowsBase.dll"
                   },
                   {
-                      "sha256":  "d9c01889ba1eaa3ed4012a53594d09af4d783dcd16b8875ed2e45497a1518a50",
+                      "sha256":  "a8efc4666984c4d865078d770249d132f9631f5841619b7c514ad341090d2788",
                       "path":  "Effects/SbStudio.GroupEffects.BlackAndWhite.dll"
                   },
                   {
-                      "sha256":  "80460b982d5f32297c458e1f9cdde23b6a515d01c8f13e09122f92ab7db2ce25",
+                      "sha256":  "1ebb1eb375066744de913111d366f086c83f91dfc2a484ad7b785aa63405f1a0",
                       "path":  "Effects/SbStudio.GroupEffects.ChromaticAberration.dll"
                   },
                   {
-                      "sha256":  "704bd61ef4d832ed75e53332848779dd6c95e12832b3d75cbe5fe80b0d9aecd8",
+                      "sha256":  "bab86cd74e450cbeb414be8eb4c7292372f2f95f9e1e02acd4e81d235e8bb411",
                       "path":  "Effects/SbStudio.GroupEffects.ColorAdjust.dll"
                   },
                   {
-                      "sha256":  "9c77b0c459f184f9aa9bb2c6ec6d10b3d73eea6c4e01b2152cc1942d000334e5",
+                      "sha256":  "ea34964827ae2da9c559065e54a5bdd7d16b31e3785ba6e944b3f7f4fc31eac7",
                       "path":  "Effects/SbStudio.GroupEffects.ColorTemperature.dll"
                   },
                   {
-                      "sha256":  "f9db2c53a590407cb92137075dd9389d3b03915f43abbf6bd02544312d0efb6a",
+                      "sha256":  "4b63e4e981d9c2ce9b480bce89da92ac550e384e37c98969d2910f056c338ba2",
                       "path":  "Effects/SbStudio.GroupEffects.Curves.dll"
                   },
                   {
-                      "sha256":  "5e99876c8349e8de99759da5aa76ed51913cfcaea8a99f5e4b143490e0dab437",
+                      "sha256":  "5da554076972776fd75b579ede3a3d72b2676d521437cb967cb4d819180351e2",
                       "path":  "Effects/SbStudio.GroupEffects.Duotone.dll"
                   },
                   {
-                      "sha256":  "f3d12c106b87023051e841456749af7b37021607c3cc1c7bf785609e6733db98",
+                      "sha256":  "b159c477a95b67d65a7a79c3d84476a6864046586fa99106d683544faf7d5357",
                       "path":  "Effects/SbStudio.GroupEffects.FilmGrain.dll"
                   },
                   {
-                      "sha256":  "e21626cc6d61355a975c3d1e14d464d1a8358c2df2a9bb7e912209586c71201f",
+                      "sha256":  "3af4602aa58b5c8bf9bf07009a6f7b8909747726e12c539b2a07785eae7de39b",
                       "path":  "Effects/SbStudio.GroupEffects.GaussianBlur.dll"
                   },
                   {
-                      "sha256":  "91c36a166eef8ec5965ef6d7a448e632e08f0c4431fc4edacdcacb813dc45bae",
+                      "sha256":  "36cc8b76d9f008bd52899e1dc87d13bbc7f2a9f8b4e1e14f4ba0a489f38b924c",
                       "path":  "Effects/SbStudio.GroupEffects.ImageOutline.dll"
                   },
                   {
-                      "sha256":  "b58bd95885ac9eb0669998682537549416c6eefe464a3e33ce7badf9cb79d0d9",
+                      "sha256":  "af986a577e317845f6b52aa06f02536edb736a1f8ff199e0a231f31fdef41cf9",
                       "path":  "Effects/SbStudio.GroupEffects.Invert.dll"
                   },
                   {
-                      "sha256":  "09329ab87fa72608e90e31884745b6a14c2b9f66bf914376b11c4f5be4e50912",
+                      "sha256":  "033ae9938dc1e123189264178e21b75e63cf5030f2d58a287e56e68b977b3625",
                       "path":  "Effects/SbStudio.GroupEffects.LineArt.dll"
                   },
                   {
-                      "sha256":  "05542e2e276e8bebc5f0681ad92edf98f9b9f8026b7c75638f7118371cc8f7be",
+                      "sha256":  "0743336635b563fb003b02ee2577f0e1abb76fdd4c2ac3a2648a0b6ee5275bb0",
                       "path":  "Effects/SbStudio.GroupEffects.Mosaic.dll"
                   },
                   {
-                      "sha256":  "e5e49670f883015516d91045eb9e6aecd72694a5146a2ee45e576c28b82653a0",
+                      "sha256":  "2c88528f636e5e489be271caa4c22e290059059281ecd98e157cc32632f91446",
                       "path":  "Effects/SbStudio.GroupEffects.MotionBlur.dll"
                   },
                   {
-                      "sha256":  "0133e9b1e0039db7891adfd7cf4616e1395e2278e19072d198417450aeb58f78",
+                      "sha256":  "ce2c08fe79565404635038069ebe669442b07e14c5d654734710df246a004fa4",
                       "path":  "Effects/SbStudio.GroupEffects.PathMotion.dll"
                   },
                   {
-                      "sha256":  "eae05cdf6fa77be5f39aed3c2f2e834b39022588d452a99521cabe85532bd563",
+                      "sha256":  "21e74310ca1e1a5b1af97a71110a567c7886bcd8aa17b0724d87163973afddba",
                       "path":  "Effects/SbStudio.GroupEffects.RadialBlur.dll"
                   },
                   {
-                      "sha256":  "c743889bd9b209d7911679d6b438ecf07d98583e36b47467f7e2ebdc8f2e48a4",
+                      "sha256":  "996f2fc6b6499b5ef7f4a9d3c262ddd48bc9c2fc96a954a0ebefd0eb81314bde",
                       "path":  "Effects/SbStudio.GroupEffects.Shake.dll"
                   },
                   {
@@ -1742,67 +1742,67 @@
                       "path":  "ImGui.NET.dll"
                   },
                   {
-                      "sha256":  "2a57ff9e082eb4710b5531013fab67e5b39fb87e13c5fb5f99ddaae8d189438f",
+                      "sha256":  "209183736e6a34241d9f3618de83807f946379d6f906556f364b97fae2625abe",
                       "path":  "lang/de.json"
                   },
                   {
-                      "sha256":  "343a128368dc3ab11d971a0af8e764661d4c6d23e3f30b0193f546935ee96d61",
+                      "sha256":  "0b216d2966d86fa69474c4314efcdb87f70e68c203578ed201ba65baf6773c8d",
                       "path":  "lang/en.json"
                   },
                   {
-                      "sha256":  "a1b03d23f2a017e523bf1cfa80bc521eba860183f6db07f8674964cf576f5bbb",
+                      "sha256":  "aac5bf8fa8a86a2e610508c82b057113304d3a4c0db6ce986152d97853c13810",
                       "path":  "lang/es.json"
                   },
                   {
-                      "sha256":  "3750c5cd0afb3a8e4fccd6f3a55c9e246dce6359fed9bac3db2529417bbf3301",
+                      "sha256":  "4806e8d246038268286e6d6ba0978157b603ff6831220f7d896cf629b207257c",
                       "path":  "lang/fr.json"
                   },
                   {
-                      "sha256":  "a4c78734b710ddb6808a9ddfe201f5d40c50602a34f6901dee7ce7c5d2748e78",
+                      "sha256":  "5352662ab03a60b29404280ea5e243393557e8b3c5dde1c9e27ce9d84db9e5e3",
                       "path":  "lang/id.json"
                   },
                   {
-                      "sha256":  "0e4bd929779bc3c1198eb9f82586a1ab6429392c72e0988681b56dcc20726d0f",
+                      "sha256":  "e4078e069326283cb5596e2385adc5bddf14ac91f1766fe4a1420688b3e9aefe",
                       "path":  "lang/it.json"
                   },
                   {
-                      "sha256":  "79c94de18e61ae006ff84480c722ef20760693e8ed772238c75d6fcfa8403752",
+                      "sha256":  "5d2755c148eceef3e96c685a98bd77a8979b3b59257f1c2614bfa7bd997fb1c8",
                       "path":  "lang/ja.json"
                   },
                   {
-                      "sha256":  "a51bfd827ca9687f2e6e9df6408174bcb619d61e671c1143a4760ba773821c97",
+                      "sha256":  "058edd2f8ae9b0e9652c6f8987641c39d21626a24523604e45c94222b139fb1e",
                       "path":  "lang/ko.json"
                   },
                   {
-                      "sha256":  "f58346f0560c0f70642d773f27d61fa943b6002e3dc2e0fe9b817418a9823b6a",
+                      "sha256":  "d5fb28086017537938f5170d946641213dc1968dd84e179a08928b3dc4d2cda2",
                       "path":  "lang/lt.json"
                   },
                   {
-                      "sha256":  "31e89ecdb2777fd2bf6f5e49915705507dcc59d32071094366c0511cb3ae968c",
+                      "sha256":  "fbb93cd19cdd6dd683669491d1a8ca723c96e9c61cbe73acca78ca029a28f140",
                       "path":  "lang/nl.json"
                   },
                   {
-                      "sha256":  "f84c536c25f019a6eda797bfddd1b466c90105e130f80299e049ec8d7c52e07e",
+                      "sha256":  "756468fb8f67c379f3c1f082b62b1a57d2398cb9583ea3c06250f826f4cd87f7",
                       "path":  "lang/pt-BR.json"
                   },
                   {
-                      "sha256":  "b6b2818dac1f9fc337879380b186ecebf6fe3f467605ebb628b81a7c441554e7",
+                      "sha256":  "687bb80282f71f690a0dcbbe62491e36b2b331baea798206bfb4ac290c07c3c4",
                       "path":  "lang/ru.json"
                   },
                   {
-                      "sha256":  "b879ee19b9da7c985f7fd6ec0aa9eb1ff714913c39b2badd5fd3c94a0d418802",
+                      "sha256":  "ab996dbc7b303254d5b40c097bab7142638702007c7b0c4bb6b9edc3f4b11f75",
                       "path":  "lang/th.json"
                   },
                   {
-                      "sha256":  "74c01ef2284d24e3692d488cebb35fdb2c769708b0e17354cd409abf66b0fa90",
+                      "sha256":  "f08f0510d27b8bca45a63ea70b6a241426a9ec0b466c08625ce3fb1169cacefd",
                       "path":  "lang/vi.json"
                   },
                   {
-                      "sha256":  "7a24f2afa1e8abc6fbbf2033a22a7305670878910ab640395bfb1d339c084a91",
+                      "sha256":  "f8d468f4ecc58f0e891e76dfb15d102c0c4c5713fe64e02c7f1adad45c9cfbf4",
                       "path":  "lang/zh-Hans.json"
                   },
                   {
-                      "sha256":  "82263cf4f840a99bf1ed57a14bd46a8aeaf4bc56bfc004f1ee4a416c8fdf65d6",
+                      "sha256":  "3a19425344989cb0e20bb0bd453d5c00b7c0bfcb097d7d06bdedc1d3dae8ac78",
                       "path":  "lang/zh-Hant.json"
                   },
                   {
@@ -1862,11 +1862,11 @@
                       "path":  "nfd.pdb"
                   },
                   {
-                      "sha256":  "78a0b6a4a1112e87e64b6b7d3752114ccbf0421c546ceb59465f988b5f82716c",
+                      "sha256":  "290d0fac71785cb0be2f53b30c64eb99f2a2464782f0266654a4e963bb4018d0",
                       "path":  "OsuStoryboardStudio.deps.json"
                   },
                   {
-                      "sha256":  "ed68da521b763122473b2ae0ae50fe7bad1ed1cd9081554f6313521d471dd1d0",
+                      "sha256":  "0d53c20808c79babe241ddd1cb15c723de8f123de200de89ff0de58c25a53210",
                       "path":  "OsuStoryboardStudio.dll"
                   },
                   {
@@ -1874,7 +1874,7 @@
                       "path":  "OsuStoryboardStudio.exe"
                   },
                   {
-                      "sha256":  "4c18349ab02ba98e81186bce8f78ec04b46a9fc554d9d462aed6e89390a94055",
+                      "sha256":  "709749a0779735220e0f684b947aa38bdec569e73285e24951ad8d31a2d991db",
                       "path":  "OsuStoryboardStudio.pdb"
                   },
                   {
@@ -1898,47 +1898,47 @@
                       "path":  "ppy.ManagedBass.Fx.dll"
                   },
                   {
-                      "sha256":  "c4c3f9538278331f8cd18d913448de8a5ffec96726cc3f9f4ea749871598f33f",
+                      "sha256":  "fe2896d5f94fdb0defedc58e238082aad7174b1ab20befe9d89ad4f2d37b568f",
                       "path":  "SbStudio.Authoring.Contracts.dll"
                   },
                   {
-                      "sha256":  "b9772aeb71536ce5cce944b1cc696acef1b2272a77004705b3ed7fad8c4a9abb",
+                      "sha256":  "7bbc0dbb65b2f587cfb36ebdc6050fd32d117f09d3938dca8464205f6f7c1140",
                       "path":  "SbStudio.Authoring.Contracts.pdb"
                   },
                   {
-                      "sha256":  "1533781f068619ab26634911b1de260f58192bcc3b60b11e8b10381bfa5fb2f1",
+                      "sha256":  "016c3c1a9a5748ae11b5b801474480e32aef6978057cf67af20946a0fe27a968",
                       "path":  "SbStudio.Authoring.Runtime.dll"
                   },
                   {
-                      "sha256":  "42135fa31dfa7fe42bd4cc7808cb12fc4666760161835034df640eee48caf704",
+                      "sha256":  "0c6a3a8f2e8e4786fd4dc3d55e4f60305ecde4239b634f317e13202e5f05b9af",
                       "path":  "SbStudio.Authoring.Runtime.pdb"
                   },
                   {
-                      "sha256":  "e2569757b6711a2ca75050afebd502842c567e26fe56a5145121e2ac995da500",
+                      "sha256":  "e388062b139a24def5c7d2482136a1fdbebb5f624a51468e297e2c206859ce09",
                       "path":  "SbStudio.Authoring.Sdk.dll"
                   },
                   {
-                      "sha256":  "bc95c871af18b3973d4d5e82b44e15acab01ca65e50151fc11f6dedc5278563c",
+                      "sha256":  "93199f0508d3c87f621ae256661db20e929864bf5ac9fd94462f51107d66d1ca",
                       "path":  "SbStudio.Authoring.Sdk.pdb"
                   },
                   {
-                      "sha256":  "84eda1393978663bee17bbc6170d57d8d43dd4e5f9562ff472e3207e18098e23",
+                      "sha256":  "551b6019e656f22799da465075edf03c512f34739ba4b10a2ec0a6902037102a",
                       "path":  "SbStudio.Authoring.Sdk.xml"
                   },
                   {
-                      "sha256":  "12cd37ecb587e86da198edc1d94ea312d073e5540106cb183326c61208df566c",
+                      "sha256":  "517630726478c3be8a40ceddf80ef2c1fd7d63aebe03528db74ec5e7ff326a8f",
                       "path":  "SbStudio.Core.dll"
                   },
                   {
-                      "sha256":  "86f79d3fe23fd750f54c908d6875e3293f86804929811716d1dc6dda74493ff8",
+                      "sha256":  "badccbd3353a1dc85df3481008f7ca4e051adbddb3f98da447828c602d7f47f4",
                       "path":  "SbStudio.Core.pdb"
                   },
                   {
-                      "sha256":  "d1010416a90bac1bbbb9b8e5d89eeb7b3f3e9a969219613a4839102067ee7434",
+                      "sha256":  "b38e55deedb3f88801b9a2a0c8eff607cda0ba37eb884917c857ac4679641c48",
                       "path":  "SbStudio.Resources.dll"
                   },
                   {
-                      "sha256":  "0c93fbf1711aa4f00743961f33f1decf13c2c0af23ca69ca877ad1d764ecf6cd",
+                      "sha256":  "eaf593d2ce1adb598b2ce2157ae61662f148508b5c089cf115e2a7916f0b53c7",
                       "path":  "SbStudio.Resources.pdb"
                   },
                   {
@@ -2002,71 +2002,71 @@
                       "path":  "System.Private.Windows.GdiPlus.dll"
                   },
                   {
-                      "sha256":  "9d14bcfb08ac348c8bca9cefaa937643f37fbf9b2ed84f91f722ec2c22a3e5ec",
+                      "sha256":  "aacaf8058fd721d62d767e62c2896eafbb1abb7175a14bd7c52ca93fb2181a03",
                       "path":  "Templates/SbStudio.Templates.BasicShape.dll"
                   },
                   {
-                      "sha256":  "76ea17bdbd5e5c099ff44c9822ca32de84f6dfaf611108adec0851c6e9908423",
+                      "sha256":  "5a8bb69ae0d80804c8b28d24fd01ee0f2e51af0233ea82d96093aa5541aeae6e",
                       "path":  "Templates/SbStudio.Templates.BeatFlash.dll"
                   },
                   {
-                      "sha256":  "f21fbdd072575bdc694f7dc3f43d61ccc7265726d966ed2ef5201feb5c6929d5",
+                      "sha256":  "9471a05696a743133362c669b42260adf45bcee58185e05d7926560bf0777432",
                       "path":  "Templates/SbStudio.Templates.FilmFrame.dll"
                   },
                   {
-                      "sha256":  "b0cb8f7db72b82fc8bf89d2dfc850fdd506078d5142ea53f4b444d971d90c84a",
+                      "sha256":  "60d768601126b5228d1145a4641565b3229c4b033f8477185cede64d9f26d7e9",
                       "path":  "Templates/SbStudio.Templates.FilmRewind.dll"
                   },
                   {
-                      "sha256":  "ee2a72e285f1a4c0db6a49707b3f8628c36d6265a0510a8d56fd425a68fbd051",
+                      "sha256":  "a74f08903f20b463e1cb8bcaf9e7bc5b871298f23551f65eeb09229fbb5d6304",
                       "path":  "Templates/SbStudio.Templates.Fireworks.dll"
                   },
                   {
-                      "sha256":  "73e677835e842760570cc54847c14bc15f80c237ac540568d8640e9598e7d6c8",
+                      "sha256":  "f789598db2adbc064e1217598443c9d96a81bcfa78d3fd8e060eb2215afec2f6",
                       "path":  "Templates/SbStudio.Templates.GifAnimation.dll"
                   },
                   {
-                      "sha256":  "0af47b84713a0f3d19478b7db7716051ee5aa565408a227c675e529d51192ed7",
+                      "sha256":  "d076b610d445ec635236ed4806ec3c2a18774a88bdcf0499ce7ee04728ac6a5e",
                       "path":  "Templates/SbStudio.Templates.GrainOverlay.dll"
                   },
                   {
-                      "sha256":  "f7488e8fd9bc0cd115c5415153c779e854413c1d9b4e58e3651b4448b2a5a59d",
+                      "sha256":  "bf96376abcab7edb282a3a50cbf6428ab6607051b7631ebec168c30700a91161",
                       "path":  "Templates/SbStudio.Templates.ImageComposite.dll"
                   },
                   {
-                      "sha256":  "45d6ad0bbd63f4ffa4cec00cbda15a370731835f000f707615ab9f89c52a091c",
+                      "sha256":  "c589623581249b832bd49cfaf980ac58f292987490327d900f06779a98a16c8b",
                       "path":  "Templates/SbStudio.Templates.IrisWipe.dll"
                   },
                   {
-                      "sha256":  "bd95bc25b2730bfc9d2fc467c5c0688d0c3a68906eaa39c1167e42da8f5a84e3",
+                      "sha256":  "668e7a6fb32b2ff8b655781aab4acceee7750ecfe52ecf4396a265142884a886",
                       "path":  "Templates/SbStudio.Templates.LuminanceWipe.dll"
                   },
                   {
-                      "sha256":  "f0cbe30edb924549e92854635ddc3af73774c1b22189bc79e41b4db958933b8a",
+                      "sha256":  "aa589863abbe6953910d15a186dc90cc0070731f8ecc35710e064bd4f83b3150",
                       "path":  "Templates/SbStudio.Templates.Lyrics.dll"
                   },
                   {
-                      "sha256":  "34c60d1b12a3f607512ebfc999c9e9767396fd7b211c275d0bf5e3b50ef91f36",
+                      "sha256":  "48c62b9d2d631d310c3ae501211d7e170fa556dc4d8682844627e8190ff16919",
                       "path":  "Templates/SbStudio.Templates.MaskedImage.dll"
                   },
                   {
-                      "sha256":  "d43a1d9f6b7de53c0192b3973351e7c9c08f79c2fde9cf9abd331cbca5d697b9",
+                      "sha256":  "de56158ef8b23d94b25c0de32122cb0378055c3975d0623ac4021ed82c17d572",
                       "path":  "Templates/SbStudio.Templates.ObjectTracking.dll"
                   },
                   {
-                      "sha256":  "0422d2dac18c4d9154705720cff4b5ed25446a196c9f98e49fd1310091684d51",
+                      "sha256":  "0680cd245922091e52c29b4acf0b4755367ae420108819a281cebaefe85b6951",
                       "path":  "Templates/SbStudio.Templates.Rain.dll"
                   },
                   {
-                      "sha256":  "3bdaef74ef6c62ef5406d2a27cbfdd0a5fba1711ddbd4b0d45d2ed0c2d3b1996",
+                      "sha256":  "cd4aa2e120f9f52b261edd7827f4737ac063a5cc61bf6ce39a518800f4fc5932",
                       "path":  "Templates/SbStudio.Templates.Snow.dll"
                   },
                   {
-                      "sha256":  "719b98182c32d196f6e44b33e1826b715a0ff98caf3b10e7770c4ec9ab8ea0b1",
+                      "sha256":  "7f10f1fa27928cc252acc493e9992bad692b26c48024d887cb121895937964c6",
                       "path":  "Templates/SbStudio.Templates.Spectrum.dll"
                   },
                   {
-                      "sha256":  "eed0bb1fb334548c80e53e6a9aef4c5ce1513a0241fee9a3376685170b4c4991",
+                      "sha256":  "366961cecaa81ffbf98f3b59a65a4d79f4a73bc2f1f51a9e5d1df0bd0298b240",
                       "path":  "updater/OsuStoryboardStudio.Updater.exe"
                   }
               ]

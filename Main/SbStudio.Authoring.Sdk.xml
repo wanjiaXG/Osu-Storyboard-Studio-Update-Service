@@ -523,12 +523,6 @@
         <member name="T:SbStudio.Authoring.Mesh">
             <summary>编组里的一个 3D 网格模型。顶点是 x、y、z 依次排列的坐标（X 向右、Y 向下、Z 远离观众），面是每三个一组的顶点序号，绕向让正面朝向观众（-Z 一侧）。</summary>
         </member>
-        <member name="F:SbStudio.Authoring.Mesh.MaxVertices">
-            <summary>与编辑器一致的顶点和面上限。</summary>
-        </member>
-        <member name="F:SbStudio.Authoring.Mesh.MaxFaces">
-            <summary>与编辑器一致的顶点和面上限。</summary>
-        </member>
         <member name="M:SbStudio.Authoring.Mesh.Color(SbStudio.Authoring.Color)">
             <summary>整个网格的整体颜色；不写时保持模型默认色。</summary>
         </member>
@@ -546,6 +540,15 @@
         </member>
         <member name="M:SbStudio.Authoring.Mesh.SolidAndWireframe">
             <summary>面和线框一起画。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Mesh.Points">
+            <summary>用许多发光小点拼出模型（点云），不画面和线框。点的数量和大小可用 <see cref="M:SbStudio.Authoring.Mesh.PointCount(System.Int32)"/>、<see cref="M:SbStudio.Authoring.Mesh.PointSize(System.Double)"/> 设置。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Mesh.PointCount(System.Int32)">
+            <summary>点云的点数，必须大于 0；不写时用编辑器默认值。</summary>
+        </member>
+        <member name="M:SbStudio.Authoring.Mesh.PointSize(System.Double)">
+            <summary>点云每个点在屏幕上的宽度（像素），必须大于 0；不写时用编辑器默认值。</summary>
         </member>
         <member name="T:SbStudio.Authoring.Module">
             <summary>模板和效果共同的基础：时长、谱面、随机数、读取素材与提示信息。</summary>

@@ -2,97 +2,97 @@
     "files":  [
                   {
                       "path":  "SbStudio.GroupEffects.BlackAndWhite.dll",
-                      "sha256":  "d9c01889ba1eaa3ed4012a53594d09af4d783dcd16b8875ed2e45497a1518a50",
+                      "sha256":  "a8efc4666984c4d865078d770249d132f9631f5841619b7c514ad341090d2788",
                       "size":  11776,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.ChromaticAberration.dll",
-                      "sha256":  "80460b982d5f32297c458e1f9cdde23b6a515d01c8f13e09122f92ab7db2ce25",
+                      "sha256":  "1ebb1eb375066744de913111d366f086c83f91dfc2a484ad7b785aa63405f1a0",
                       "size":  21504,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.ColorAdjust.dll",
-                      "sha256":  "704bd61ef4d832ed75e53332848779dd6c95e12832b3d75cbe5fe80b0d9aecd8",
+                      "sha256":  "bab86cd74e450cbeb414be8eb4c7292372f2f95f9e1e02acd4e81d235e8bb411",
                       "size":  15872,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.ColorTemperature.dll",
-                      "sha256":  "9c77b0c459f184f9aa9bb2c6ec6d10b3d73eea6c4e01b2152cc1942d000334e5",
+                      "sha256":  "ea34964827ae2da9c559065e54a5bdd7d16b31e3785ba6e944b3f7f4fc31eac7",
                       "size":  20992,
                       "version":  "2.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.Curves.dll",
-                      "sha256":  "f9db2c53a590407cb92137075dd9389d3b03915f43abbf6bd02544312d0efb6a",
+                      "sha256":  "4b63e4e981d9c2ce9b480bce89da92ac550e384e37c98969d2910f056c338ba2",
                       "size":  14848,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.Duotone.dll",
-                      "sha256":  "5e99876c8349e8de99759da5aa76ed51913cfcaea8a99f5e4b143490e0dab437",
+                      "sha256":  "5da554076972776fd75b579ede3a3d72b2676d521437cb967cb4d819180351e2",
                       "size":  14848,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.FilmGrain.dll",
-                      "sha256":  "f3d12c106b87023051e841456749af7b37021607c3cc1c7bf785609e6733db98",
+                      "sha256":  "b159c477a95b67d65a7a79c3d84476a6864046586fa99106d683544faf7d5357",
                       "size":  18432,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.GaussianBlur.dll",
-                      "sha256":  "e21626cc6d61355a975c3d1e14d464d1a8358c2df2a9bb7e912209586c71201f",
+                      "sha256":  "3af4602aa58b5c8bf9bf07009a6f7b8909747726e12c539b2a07785eae7de39b",
                       "size":  11264,
                       "version":  "4.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.ImageOutline.dll",
-                      "sha256":  "91c36a166eef8ec5965ef6d7a448e632e08f0c4431fc4edacdcacb813dc45bae",
+                      "sha256":  "36cc8b76d9f008bd52899e1dc87d13bbc7f2a9f8b4e1e14f4ba0a489f38b924c",
                       "size":  82944,
                       "version":  "2.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.Invert.dll",
-                      "sha256":  "b58bd95885ac9eb0669998682537549416c6eefe464a3e33ce7badf9cb79d0d9",
+                      "sha256":  "af986a577e317845f6b52aa06f02536edb736a1f8ff199e0a231f31fdef41cf9",
                       "size":  11264,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.LineArt.dll",
-                      "sha256":  "09329ab87fa72608e90e31884745b6a14c2b9f66bf914376b11c4f5be4e50912",
+                      "sha256":  "033ae9938dc1e123189264178e21b75e63cf5030f2d58a287e56e68b977b3625",
                       "size":  27648,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.Mosaic.dll",
-                      "sha256":  "05542e2e276e8bebc5f0681ad92edf98f9b9f8026b7c75638f7118371cc8f7be",
+                      "sha256":  "0743336635b563fb003b02ee2577f0e1abb76fdd4c2ac3a2648a0b6ee5275bb0",
                       "size":  12800,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.MotionBlur.dll",
-                      "sha256":  "e5e49670f883015516d91045eb9e6aecd72694a5146a2ee45e576c28b82653a0",
+                      "sha256":  "2c88528f636e5e489be271caa4c22e290059059281ecd98e157cc32632f91446",
                       "size":  18432,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.PathMotion.dll",
-                      "sha256":  "0133e9b1e0039db7891adfd7cf4616e1395e2278e19072d198417450aeb58f78",
+                      "sha256":  "ce2c08fe79565404635038069ebe669442b07e14c5d654734710df246a004fa4",
                       "size":  51200,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.RadialBlur.dll",
-                      "sha256":  "eae05cdf6fa77be5f39aed3c2f2e834b39022588d452a99521cabe85532bd563",
+                      "sha256":  "21e74310ca1e1a5b1af97a71110a567c7886bcd8aa17b0724d87163973afddba",
                       "size":  22528,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.GroupEffects.Shake.dll",
-                      "sha256":  "c743889bd9b209d7911679d6b438ecf07d98583e36b47467f7e2ebdc8f2e48a4",
+                      "sha256":  "996f2fc6b6499b5ef7f4a9d3c262ddd48bc9c2fc96a954a0ebefd0eb81314bde",
                       "size":  15872,
                       "version":  "4.0.0.0"
                   }

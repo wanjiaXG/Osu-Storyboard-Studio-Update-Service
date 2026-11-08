@@ -3,8 +3,8 @@
     "files":  [
                   {
                       "path":  "authoring/authoring.md",
-                      "sha256":  "9b256ee673c64f6b09883f82cb26fe1da68044bce9e050056fcdb9a82c2a11ae",
-                      "size":  36620
+                      "sha256":  "de5c8447134a6d287709c0851f834834d5c336ea8d147404bd6c0bfafc19698e",
+                      "size":  36909
                   },
                   {
                       "path":  "authoring/host/bass.dll",
@@ -973,32 +973,32 @@
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Analyzers.dll",
-                      "sha256":  "b45b48ab7e3be571cda23cd406d2654c4ce1ecf519e2c9d1da4c5661674f9d1d",
+                      "sha256":  "4f615e5c04c46185a71d38dc209e0a893d057b63312cf24f82f85a47f5df4fa9",
                       "size":  29696
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Analyzers.pdb",
-                      "sha256":  "b699034783c71c8e116b502c6fe0cda8949d17895ce2d4bfa6ac1c5c6742da53",
+                      "sha256":  "02c1af078ffff4eaed4a55aba8be4218642d0e821d4d6714ef21e7b2407d9b48",
                       "size":  13668
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Contracts.dll",
-                      "sha256":  "c4c3f9538278331f8cd18d913448de8a5ffec96726cc3f9f4ea749871598f33f",
-                      "size":  307200
+                      "sha256":  "fe2896d5f94fdb0defedc58e238082aad7174b1ab20befe9d89ad4f2d37b568f",
+                      "size":  307712
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Contracts.pdb",
-                      "sha256":  "b9772aeb71536ce5cce944b1cc696acef1b2272a77004705b3ed7fad8c4a9abb",
-                      "size":  78128
+                      "sha256":  "7bbc0dbb65b2f587cfb36ebdc6050fd32d117f09d3938dca8464205f6f7c1140",
+                      "size":  78276
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Host.deps.json",
-                      "sha256":  "7a3560c24047c4988442cb0559059f72fcec6142d4d6397310f02a640c7acb60",
+                      "sha256":  "c0f2411ecc32b7e673052bdfff26731d36039cd1678f9087b3811550f769c3fa",
                       "size":  9789
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Host.dll",
-                      "sha256":  "7ca9af6abb71892320b1f394508d3e1378b0e2d53bf160f8fa975db798376589",
+                      "sha256":  "a2d85b81e202c4ea011afc305128085d00c7af894a9efcc309fadf91e3f587aa",
                       "size":  61952
                   },
                   {
@@ -1008,7 +1008,7 @@
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Host.pdb",
-                      "sha256":  "f54d68e75c91c1a5cc85888b5c2cbaa123d101cb3f90beccedd217fb336d399d",
+                      "sha256":  "565c79630acbcc49df6c1beeec98705d6f3742bead1bacd127a4d179f2919233",
                       "size":  23112
                   },
                   {
@@ -1018,28 +1018,28 @@
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Runtime.dll",
-                      "sha256":  "1533781f068619ab26634911b1de260f58192bcc3b60b11e8b10381bfa5fb2f1",
-                      "size":  45568
+                      "sha256":  "016c3c1a9a5748ae11b5b801474480e32aef6978057cf67af20946a0fe27a968",
+                      "size":  45056
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Runtime.pdb",
-                      "sha256":  "42135fa31dfa7fe42bd4cc7808cb12fc4666760161835034df640eee48caf704",
+                      "sha256":  "0c6a3a8f2e8e4786fd4dc3d55e4f60305ecde4239b634f317e13202e5f05b9af",
                       "size":  23932
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Sdk.dll",
-                      "sha256":  "e2569757b6711a2ca75050afebd502842c567e26fe56a5145121e2ac995da500",
-                      "size":  169984
+                      "sha256":  "e388062b139a24def5c7d2482136a1fdbebb5f624a51468e297e2c206859ce09",
+                      "size":  169472
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Sdk.pdb",
-                      "sha256":  "bc95c871af18b3973d4d5e82b44e15acab01ca65e50151fc11f6dedc5278563c",
-                      "size":  48380
+                      "sha256":  "93199f0508d3c87f621ae256661db20e929864bf5ac9fd94462f51107d66d1ca",
+                      "size":  48388
                   },
                   {
                       "path":  "authoring/host/SbStudio.Authoring.Sdk.xml",
-                      "sha256":  "84eda1393978663bee17bbc6170d57d8d43dd4e5f9562ff472e3207e18098e23",
-                      "size":  58848
+                      "sha256":  "551b6019e656f22799da465075edf03c512f34739ba4b10a2ec0a6902037102a",
+                      "size":  59310
                   },
                   {
                       "path":  "authoring/host/StbImageSharp.dll",
@@ -2098,83 +2098,83 @@
                   },
                   {
                       "path":  "lang/de.json",
-                      "sha256":  "2a57ff9e082eb4710b5531013fab67e5b39fb87e13c5fb5f99ddaae8d189438f",
-                      "size":  197342
+                      "sha256":  "209183736e6a34241d9f3618de83807f946379d6f906556f364b97fae2625abe",
+                      "size":  202230
                   },
                   {
                       "path":  "lang/en.json",
-                      "sha256":  "343a128368dc3ab11d971a0af8e764661d4c6d23e3f30b0193f546935ee96d61",
-                      "size":  178248
+                      "sha256":  "0b216d2966d86fa69474c4314efcdb87f70e68c203578ed201ba65baf6773c8d",
+                      "size":  182606
                   },
                   {
                       "path":  "lang/es.json",
-                      "sha256":  "a1b03d23f2a017e523bf1cfa80bc521eba860183f6db07f8674964cf576f5bbb",
-                      "size":  194312
+                      "sha256":  "aac5bf8fa8a86a2e610508c82b057113304d3a4c0db6ce986152d97853c13810",
+                      "size":  199216
                   },
                   {
                       "path":  "lang/fr.json",
-                      "sha256":  "3750c5cd0afb3a8e4fccd6f3a55c9e246dce6359fed9bac3db2529417bbf3301",
-                      "size":  201313
+                      "sha256":  "4806e8d246038268286e6d6ba0978157b603ff6831220f7d896cf629b207257c",
+                      "size":  206410
                   },
                   {
                       "path":  "lang/id.json",
-                      "sha256":  "a4c78734b710ddb6808a9ddfe201f5d40c50602a34f6901dee7ce7c5d2748e78",
-                      "size":  183682
+                      "sha256":  "5352662ab03a60b29404280ea5e243393557e8b3c5dde1c9e27ce9d84db9e5e3",
+                      "size":  188309
                   },
                   {
                       "path":  "lang/it.json",
-                      "sha256":  "0e4bd929779bc3c1198eb9f82586a1ab6429392c72e0988681b56dcc20726d0f",
-                      "size":  193551
+                      "sha256":  "e4078e069326283cb5596e2385adc5bddf14ac91f1766fe4a1420688b3e9aefe",
+                      "size":  198331
                   },
                   {
                       "path":  "lang/ja.json",
-                      "sha256":  "79c94de18e61ae006ff84480c722ef20760693e8ed772238c75d6fcfa8403752",
-                      "size":  225106
+                      "sha256":  "5d2755c148eceef3e96c685a98bd77a8979b3b59257f1c2614bfa7bd997fb1c8",
+                      "size":  230767
                   },
                   {
                       "path":  "lang/ko.json",
-                      "sha256":  "a51bfd827ca9687f2e6e9df6408174bcb619d61e671c1143a4760ba773821c97",
-                      "size":  204574
+                      "sha256":  "058edd2f8ae9b0e9652c6f8987641c39d21626a24523604e45c94222b139fb1e",
+                      "size":  209752
                   },
                   {
                       "path":  "lang/lt.json",
-                      "sha256":  "f58346f0560c0f70642d773f27d61fa943b6002e3dc2e0fe9b817418a9823b6a",
-                      "size":  191981
+                      "sha256":  "d5fb28086017537938f5170d946641213dc1968dd84e179a08928b3dc4d2cda2",
+                      "size":  196707
                   },
                   {
                       "path":  "lang/nl.json",
-                      "sha256":  "31e89ecdb2777fd2bf6f5e49915705507dcc59d32071094366c0511cb3ae968c",
-                      "size":  191674
+                      "sha256":  "fbb93cd19cdd6dd683669491d1a8ca723c96e9c61cbe73acca78ca029a28f140",
+                      "size":  196446
                   },
                   {
                       "path":  "lang/pt-BR.json",
-                      "sha256":  "f84c536c25f019a6eda797bfddd1b466c90105e130f80299e049ec8d7c52e07e",
-                      "size":  190165
+                      "sha256":  "756468fb8f67c379f3c1f082b62b1a57d2398cb9583ea3c06250f826f4cd87f7",
+                      "size":  194950
                   },
                   {
                       "path":  "lang/ru.json",
-                      "sha256":  "b6b2818dac1f9fc337879380b186ecebf6fe3f467605ebb628b81a7c441554e7",
-                      "size":  274741
+                      "sha256":  "687bb80282f71f690a0dcbbe62491e36b2b331baea798206bfb4ac290c07c3c4",
+                      "size":  281663
                   },
                   {
                       "path":  "lang/th.json",
-                      "sha256":  "b879ee19b9da7c985f7fd6ec0aa9eb1ff714913c39b2badd5fd3c94a0d418802",
-                      "size":  322427
+                      "sha256":  "ab996dbc7b303254d5b40c097bab7142638702007c7b0c4bb6b9edc3f4b11f75",
+                      "size":  330971
                   },
                   {
                       "path":  "lang/vi.json",
-                      "sha256":  "74c01ef2284d24e3692d488cebb35fdb2c769708b0e17354cd409abf66b0fa90",
-                      "size":  210838
+                      "sha256":  "f08f0510d27b8bca45a63ea70b6a241426a9ec0b466c08625ce3fb1169cacefd",
+                      "size":  215965
                   },
                   {
                       "path":  "lang/zh-Hans.json",
-                      "sha256":  "7a24f2afa1e8abc6fbbf2033a22a7305670878910ab640395bfb1d339c084a91",
-                      "size":  171611
+                      "sha256":  "f8d468f4ecc58f0e891e76dfb15d102c0c4c5713fe64e02c7f1adad45c9cfbf4",
+                      "size":  175625
                   },
                   {
                       "path":  "lang/zh-Hant.json",
-                      "sha256":  "82263cf4f840a99bf1ed57a14bd46a8aeaf4bc56bfc004f1ee4a416c8fdf65d6",
-                      "size":  171917
+                      "sha256":  "3a19425344989cb0e20bb0bd453d5c00b7c0bfcb097d7d06bdedc1d3dae8ac78",
+                      "size":  173550
                   },
                   {
                       "path":  "Microsoft.DotNet.PlatformAbstractions.dll",
@@ -2248,13 +2248,13 @@
                   },
                   {
                       "path":  "OsuStoryboardStudio.deps.json",
-                      "sha256":  "78a0b6a4a1112e87e64b6b7d3752114ccbf0421c546ceb59465f988b5f82716c",
+                      "sha256":  "290d0fac71785cb0be2f53b30c64eb99f2a2464782f0266654a4e963bb4018d0",
                       "size":  21313
                   },
                   {
                       "path":  "OsuStoryboardStudio.dll",
-                      "sha256":  "ed68da521b763122473b2ae0ae50fe7bad1ed1cd9081554f6313521d471dd1d0",
-                      "size":  2347008
+                      "sha256":  "0d53c20808c79babe241ddd1cb15c723de8f123de200de89ff0de58c25a53210",
+                      "size":  2359296
                   },
                   {
                       "path":  "OsuStoryboardStudio.exe",
@@ -2263,8 +2263,8 @@
                   },
                   {
                       "path":  "OsuStoryboardStudio.pdb",
-                      "sha256":  "4c18349ab02ba98e81186bce8f78ec04b46a9fc554d9d462aed6e89390a94055",
-                      "size":  582344
+                      "sha256":  "709749a0779735220e0f684b947aa38bdec569e73285e24951ad8d31a2d991db",
+                      "size":  585492
                   },
                   {
                       "path":  "OsuStoryboardStudio.runtimeconfig.json",
@@ -2278,7 +2278,7 @@
                   },
                   {
                       "path":  "portable-manifest.json",
-                      "sha256":  "26edefee3b2427d263be0452164f074a96fb4cee944071b2adcacd44fd6dcc33",
+                      "sha256":  "fbc8504aaf4591064c7ccd63615715850ee37e94775db7e7e73a9ce6494087f3",
                       "size":  120321
                   },
                   {
@@ -2298,57 +2298,57 @@
                   },
                   {
                       "path":  "SbStudio.Authoring.Contracts.dll",
-                      "sha256":  "c4c3f9538278331f8cd18d913448de8a5ffec96726cc3f9f4ea749871598f33f",
-                      "size":  307200
+                      "sha256":  "fe2896d5f94fdb0defedc58e238082aad7174b1ab20befe9d89ad4f2d37b568f",
+                      "size":  307712
                   },
                   {
                       "path":  "SbStudio.Authoring.Contracts.pdb",
-                      "sha256":  "b9772aeb71536ce5cce944b1cc696acef1b2272a77004705b3ed7fad8c4a9abb",
-                      "size":  78128
+                      "sha256":  "7bbc0dbb65b2f587cfb36ebdc6050fd32d117f09d3938dca8464205f6f7c1140",
+                      "size":  78276
                   },
                   {
                       "path":  "SbStudio.Authoring.Runtime.dll",
-                      "sha256":  "1533781f068619ab26634911b1de260f58192bcc3b60b11e8b10381bfa5fb2f1",
-                      "size":  45568
+                      "sha256":  "016c3c1a9a5748ae11b5b801474480e32aef6978057cf67af20946a0fe27a968",
+                      "size":  45056
                   },
                   {
                       "path":  "SbStudio.Authoring.Runtime.pdb",
-                      "sha256":  "42135fa31dfa7fe42bd4cc7808cb12fc4666760161835034df640eee48caf704",
+                      "sha256":  "0c6a3a8f2e8e4786fd4dc3d55e4f60305ecde4239b634f317e13202e5f05b9af",
                       "size":  23932
                   },
                   {
                       "path":  "SbStudio.Authoring.Sdk.dll",
-                      "sha256":  "e2569757b6711a2ca75050afebd502842c567e26fe56a5145121e2ac995da500",
-                      "size":  169984
+                      "sha256":  "e388062b139a24def5c7d2482136a1fdbebb5f624a51468e297e2c206859ce09",
+                      "size":  169472
                   },
                   {
                       "path":  "SbStudio.Authoring.Sdk.pdb",
-                      "sha256":  "bc95c871af18b3973d4d5e82b44e15acab01ca65e50151fc11f6dedc5278563c",
-                      "size":  48380
+                      "sha256":  "93199f0508d3c87f621ae256661db20e929864bf5ac9fd94462f51107d66d1ca",
+                      "size":  48388
                   },
                   {
                       "path":  "SbStudio.Authoring.Sdk.xml",
-                      "sha256":  "84eda1393978663bee17bbc6170d57d8d43dd4e5f9562ff472e3207e18098e23",
-                      "size":  58848
+                      "sha256":  "551b6019e656f22799da465075edf03c512f34739ba4b10a2ec0a6902037102a",
+                      "size":  59310
                   },
                   {
                       "path":  "SbStudio.Core.dll",
-                      "sha256":  "12cd37ecb587e86da198edc1d94ea312d073e5540106cb183326c61208df566c",
-                      "size":  4339712
+                      "sha256":  "517630726478c3be8a40ceddf80ef2c1fd7d63aebe03528db74ec5e7ff326a8f",
+                      "size":  4499456
                   },
                   {
                       "path":  "SbStudio.Core.pdb",
-                      "sha256":  "86f79d3fe23fd750f54c908d6875e3293f86804929811716d1dc6dda74493ff8",
-                      "size":  307700
+                      "sha256":  "badccbd3353a1dc85df3481008f7ca4e051adbddb3f98da447828c602d7f47f4",
+                      "size":  332408
                   },
                   {
                       "path":  "SbStudio.Resources.dll",
-                      "sha256":  "d1010416a90bac1bbbb9b8e5d89eeb7b3f3e9a969219613a4839102067ee7434",
+                      "sha256":  "b38e55deedb3f88801b9a2a0c8eff607cda0ba37eb884917c857ac4679641c48",
                       "size":  12361216
                   },
                   {
                       "path":  "SbStudio.Resources.pdb",
-                      "sha256":  "0c93fbf1711aa4f00743961f33f1decf13c2c0af23ca69ca877ad1d764ecf6cd",
+                      "sha256":  "eaf593d2ce1adb598b2ce2157ae61662f148508b5c089cf115e2a7916f0b53c7",
                       "size":  12344
                   },
                   {
@@ -2428,8 +2428,8 @@
                   },
                   {
                       "path":  "updater/OsuStoryboardStudio.Updater.exe",
-                      "sha256":  "eed0bb1fb334548c80e53e6a9aef4c5ce1513a0241fee9a3376685170b4c4991",
-                      "size":  6958486
+                      "sha256":  "366961cecaa81ffbf98f3b59a65a4d79f4a73bc2f1f51a9e5d1df0bd0298b240",
+                      "size":  7121814
                   }
               ]
 }

@@ -203,8 +203,8 @@
         },
         "runtime": {
           "SbStudio.Authoring.Sdk.dll": {
-            "assemblyVersion": "4.13.0.0",
-            "fileVersion": "4.13.0.0"
+            "assemblyVersion": "4.15.0.0",
+            "fileVersion": "4.15.0.0"
           }
         }
       }
