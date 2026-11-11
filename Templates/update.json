@@ -2,97 +2,97 @@
     "files":  [
                   {
                       "path":  "SbStudio.Templates.BasicShape.dll",
-                      "sha256":  "aacaf8058fd721d62d767e62c2896eafbb1abb7175a14bd7c52ca93fb2181a03",
+                      "sha256":  "fb838d8c6101005e4ad8749a304bc5e35ce460d315e48bac4b51f81f18d5c073",
                       "size":  52224,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.BeatFlash.dll",
-                      "sha256":  "5a8bb69ae0d80804c8b28d24fd01ee0f2e51af0233ea82d96093aa5541aeae6e",
+                      "sha256":  "4c38ca2921bc8435908311f81a3129efe7575ec177ad02ec3a041d8b06f80117",
                       "size":  10752,
                       "version":  "4.1.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.FilmFrame.dll",
-                      "sha256":  "9471a05696a743133362c669b42260adf45bcee58185e05d7926560bf0777432",
+                      "sha256":  "71bbc575d94bdfef0eadd9de5ed81e068f995eac902186d23ac97df66df9bde9",
                       "size":  30208,
                       "version":  "1.1.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.FilmRewind.dll",
-                      "sha256":  "60d768601126b5228d1145a4641565b3229c4b033f8477185cede64d9f26d7e9",
+                      "sha256":  "fdad0a879d5206b2d98ed46017844e67d1d4fbd5096a5fe3bace156a0bb1d110",
                       "size":  39424,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.Fireworks.dll",
-                      "sha256":  "a74f08903f20b463e1cb8bcaf9e7bc5b871298f23551f65eeb09229fbb5d6304",
+                      "sha256":  "e0b3f34bc716c90571a4e32e4d5865d2f6a306d4d4d0e87f88da4835c3c01531",
                       "size":  54784,
                       "version":  "2.0.1.0"
                   },
                   {
                       "path":  "SbStudio.Templates.GifAnimation.dll",
-                      "sha256":  "f789598db2adbc064e1217598443c9d96a81bcfa78d3fd8e060eb2215afec2f6",
+                      "sha256":  "346c8615c794af21871058037854c60460b306d05c7ef6e05056c0c116ec8b15",
                       "size":  39424,
                       "version":  "1.1.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.GrainOverlay.dll",
-                      "sha256":  "d076b610d445ec635236ed4806ec3c2a18774a88bdcf0499ce7ee04728ac6a5e",
+                      "sha256":  "9d9cf7efa889ffc436c180db4c265aafc96b513f6401df55956f2be81b43e9c7",
                       "size":  20480,
                       "version":  "1.0.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.ImageComposite.dll",
-                      "sha256":  "bf96376abcab7edb282a3a50cbf6428ab6607051b7631ebec168c30700a91161",
+                      "sha256":  "22ae49fdd8e20d46abfb024f77c68bf389c05a62a484eaa5a388ed7bc4bd30e4",
                       "size":  137728,
                       "version":  "2.1.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.IrisWipe.dll",
-                      "sha256":  "c589623581249b832bd49cfaf980ac58f292987490327d900f06779a98a16c8b",
+                      "sha256":  "8c0deac57f67a7c4dabb2ed465d55751e8ad884e9b1a5966fc1d29bfd8a0bae7",
                       "size":  26112,
                       "version":  "1.1.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.LuminanceWipe.dll",
-                      "sha256":  "668e7a6fb32b2ff8b655781aab4acceee7750ecfe52ecf4396a265142884a886",
+                      "sha256":  "78f522d26a1521d0eabecf6f6ebf6c6ac6e17496dd28bb4092e453819916dc4d",
                       "size":  417792,
                       "version":  "2.2.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.Lyrics.dll",
-                      "sha256":  "aa589863abbe6953910d15a186dc90cc0070731f8ecc35710e064bd4f83b3150",
+                      "sha256":  "ac09016931884fd4b2d1da9b2c8ad3462f830152eb9f5ba6c4fc3f87cadb09c9",
                       "size":  38400,
                       "version":  "4.7.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.MaskedImage.dll",
-                      "sha256":  "48c62b9d2d631d310c3ae501211d7e170fa556dc4d8682844627e8190ff16919",
+                      "sha256":  "6970925742e200cd4c94140fe3c6053a744c22c94a78d1a0552a28794490ad85",
                       "size":  59904,
                       "version":  "1.1.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.ObjectTracking.dll",
-                      "sha256":  "de56158ef8b23d94b25c0de32122cb0378055c3975d0623ac4021ed82c17d572",
+                      "sha256":  "59bba1db734e4aa3fdb4d34646fa5ef7bffa9f1a2a4e692be23a72821450648e",
                       "size":  37888,
                       "version":  "1.2.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.Rain.dll",
-                      "sha256":  "0680cd245922091e52c29b4acf0b4755367ae420108819a281cebaefe85b6951",
+                      "sha256":  "c7daa1223300f968b4e8114fd2399df9a26026340afe6a6625542e984b2e6abc",
                       "size":  21504,
                       "version":  "1.3.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.Snow.dll",
-                      "sha256":  "cd4aa2e120f9f52b261edd7827f4737ac063a5cc61bf6ce39a518800f4fc5932",
+                      "sha256":  "6268d8c4de8f4266f60e13adc510c3b8e6096b68294d91ad2020f920b18dd4db",
                       "size":  24576,
                       "version":  "4.3.0.0"
                   },
                   {
                       "path":  "SbStudio.Templates.Spectrum.dll",
-                      "sha256":  "7f10f1fa27928cc252acc493e9992bad692b26c48024d887cb121895937964c6",
+                      "sha256":  "44b046895588768428acdcc62eb460141d66c9c0d2dc7988419d70a4d9408580",
                       "size":  51200,
                       "version":  "1.4.0.0"
                   }

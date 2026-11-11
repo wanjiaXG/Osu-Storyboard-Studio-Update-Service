@@ -7,15 +7,15 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {},
     ".NETCoreApp,Version=v10.0/win-x64": {
-      "OsuStoryboardStudio/0.4.0-beta.3": {
+      "OsuStoryboardStudio/0.4.0-beta.5": {
         "dependencies": {
           "FFmpeg.AutoGen": "7.1.1",
           "ImGui.NET": "1.90.8.1",
           "NAudio": "2.2.1",
           "NativeFileDialogSharp": "0.5.0",
-          "SbStudio.Authoring.Sdk": "0.4.0-beta.3",
-          "SbStudio.Core": "0.4.0-beta.3",
-          "SbStudio.Resources": "0.4.0-beta.3",
+          "SbStudio.Authoring.Sdk": "0.4.0-beta.5",
+          "SbStudio.Core": "0.4.0-beta.5",
+          "SbStudio.Resources": "0.4.0-beta.5",
           "Sdcb.FFmpeg.runtime.windows-x64": "7.1.0",
           "Silk.NET.GLFW": "2.22.0",
           "Silk.NET.Input": "2.22.0",
@@ -340,7 +340,7 @@
           }
         }
       },
-      "SbStudio.Authoring.Contracts/0.4.0-beta.3": {
+      "SbStudio.Authoring.Contracts/0.4.0-beta.5": {
         "runtime": {
           "SbStudio.Authoring.Contracts.dll": {
             "assemblyVersion": "4.0.0.0",
@@ -348,9 +348,9 @@
           }
         }
       },
-      "SbStudio.Authoring.Runtime/0.4.0-beta.3": {
+      "SbStudio.Authoring.Runtime/0.4.0-beta.5": {
         "dependencies": {
-          "SbStudio.Authoring.Contracts": "0.4.0-beta.3",
+          "SbStudio.Authoring.Contracts": "0.4.0-beta.5",
           "StbImageSharp": "2.30.15",
           "System.Drawing.Common": "10.0.12",
           "ppy.ManagedBass": "2022.1216.0"
@@ -362,21 +362,21 @@
           }
         }
       },
-      "SbStudio.Authoring.Sdk/0.4.0-beta.3": {
+      "SbStudio.Authoring.Sdk/0.4.0-beta.5": {
         "dependencies": {
-          "SbStudio.Authoring.Contracts": "0.4.0-beta.3"
+          "SbStudio.Authoring.Contracts": "0.4.0-beta.5"
         },
         "runtime": {
           "SbStudio.Authoring.Sdk.dll": {
-            "assemblyVersion": "4.15.0.0",
-            "fileVersion": "4.15.0.0"
+            "assemblyVersion": "4.21.0.0",
+            "fileVersion": "4.21.0.0"
           }
         }
       },
-      "SbStudio.Core/0.4.0-beta.3": {
+      "SbStudio.Core/0.4.0-beta.5": {
         "dependencies": {
-          "SbStudio.Authoring.Contracts": "0.4.0-beta.3",
-          "SbStudio.Authoring.Runtime": "0.4.0-beta.3"
+          "SbStudio.Authoring.Contracts": "0.4.0-beta.5",
+          "SbStudio.Authoring.Runtime": "0.4.0-beta.5"
         },
         "runtime": {
           "SbStudio.Core.dll": {
@@ -385,7 +385,7 @@
           }
         }
       },
-      "SbStudio.Resources/0.4.0-beta.3": {
+      "SbStudio.Resources/0.4.0-beta.5": {
         "runtime": {
           "SbStudio.Resources.dll": {
             "assemblyVersion": "0.4.0.0",
@@ -396,7 +396,7 @@
     }
   },
   "libraries": {
-    "OsuStoryboardStudio/0.4.0-beta.3": {
+    "OsuStoryboardStudio/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -590,27 +590,27 @@
       "path": "ultz.native.glfw/3.4.0",
       "hashPath": "ultz.native.glfw.3.4.0.nupkg.sha512"
     },
-    "SbStudio.Authoring.Contracts/0.4.0-beta.3": {
+    "SbStudio.Authoring.Contracts/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "SbStudio.Authoring.Runtime/0.4.0-beta.3": {
+    "SbStudio.Authoring.Runtime/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "SbStudio.Authoring.Sdk/0.4.0-beta.3": {
+    "SbStudio.Authoring.Sdk/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "SbStudio.Core/0.4.0-beta.3": {
+    "SbStudio.Core/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "SbStudio.Resources/0.4.0-beta.3": {
+    "SbStudio.Resources/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

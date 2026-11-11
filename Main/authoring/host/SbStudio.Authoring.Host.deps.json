@@ -7,12 +7,12 @@
   "targets": {
     ".NETCoreApp,Version=v10.0": {},
     ".NETCoreApp,Version=v10.0/win-x64": {
-      "SbStudio.Authoring.Host/0.4.0-beta.3": {
+      "SbStudio.Authoring.Host/0.4.0-beta.5": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "5.0.0",
-          "SbStudio.Authoring.Analyzers": "0.4.0-beta.3",
-          "SbStudio.Authoring.Runtime": "0.4.0-beta.3",
-          "SbStudio.Authoring.Sdk": "0.4.0-beta.3"
+          "SbStudio.Authoring.Analyzers": "0.4.0-beta.5",
+          "SbStudio.Authoring.Runtime": "0.4.0-beta.5",
+          "SbStudio.Authoring.Sdk": "0.4.0-beta.5"
         },
         "runtime": {
           "SbStudio.Authoring.Host.dll": {}
@@ -162,7 +162,7 @@
           }
         }
       },
-      "SbStudio.Authoring.Analyzers/0.4.0-beta.3": {
+      "SbStudio.Authoring.Analyzers/0.4.0-beta.5": {
         "runtime": {
           "SbStudio.Authoring.Analyzers.dll": {
             "assemblyVersion": "0.4.0.0",
@@ -175,7 +175,7 @@
           }
         }
       },
-      "SbStudio.Authoring.Contracts/0.4.0-beta.3": {
+      "SbStudio.Authoring.Contracts/0.4.0-beta.5": {
         "runtime": {
           "SbStudio.Authoring.Contracts.dll": {
             "assemblyVersion": "4.0.0.0",
@@ -183,9 +183,9 @@
           }
         }
       },
-      "SbStudio.Authoring.Runtime/0.4.0-beta.3": {
+      "SbStudio.Authoring.Runtime/0.4.0-beta.5": {
         "dependencies": {
-          "SbStudio.Authoring.Contracts": "0.4.0-beta.3",
+          "SbStudio.Authoring.Contracts": "0.4.0-beta.5",
           "StbImageSharp": "2.30.15",
           "System.Drawing.Common": "10.0.12",
           "ppy.ManagedBass": "2022.1216.0"
@@ -197,21 +197,21 @@
           }
         }
       },
-      "SbStudio.Authoring.Sdk/0.4.0-beta.3": {
+      "SbStudio.Authoring.Sdk/0.4.0-beta.5": {
         "dependencies": {
-          "SbStudio.Authoring.Contracts": "0.4.0-beta.3"
+          "SbStudio.Authoring.Contracts": "0.4.0-beta.5"
         },
         "runtime": {
           "SbStudio.Authoring.Sdk.dll": {
-            "assemblyVersion": "4.15.0.0",
-            "fileVersion": "4.15.0.0"
+            "assemblyVersion": "4.21.0.0",
+            "fileVersion": "4.21.0.0"
           }
         }
       }
     }
   },
   "libraries": {
-    "SbStudio.Authoring.Host/0.4.0-beta.3": {
+    "SbStudio.Authoring.Host/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -258,22 +258,22 @@
       "path": "system.drawing.common/10.0.12",
       "hashPath": "system.drawing.common.10.0.12.nupkg.sha512"
     },
-    "SbStudio.Authoring.Analyzers/0.4.0-beta.3": {
+    "SbStudio.Authoring.Analyzers/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "SbStudio.Authoring.Contracts/0.4.0-beta.3": {
+    "SbStudio.Authoring.Contracts/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "SbStudio.Authoring.Runtime/0.4.0-beta.3": {
+    "SbStudio.Authoring.Runtime/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "SbStudio.Authoring.Sdk/0.4.0-beta.3": {
+    "SbStudio.Authoring.Sdk/0.4.0-beta.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
